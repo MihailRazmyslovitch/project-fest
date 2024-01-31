@@ -1,0 +1,29 @@
+.header
+    display: flex
+    align-items: center
+    position: relative
+    height: 50px
+    background: $color-header
+    color: $color-white
+    &__item
+        margin-left: 18rem
+        &_2
+            margin-left: 40rem
+        &_3
+            margin-left: 5rem
+    &__text
+        font-size: $font-size-paragraph
+        margin-left: 30px
+        &:link, &:visited
+            @include style-link($color-white)
+
+.icon-clock
+    position: absolute
+    font-size: 2rem
+.icon-phone
+    position: absolute
+    font-size: 2rem
+.icon-mail3
+    position: absolute
+    font-size: 1.8rem
+

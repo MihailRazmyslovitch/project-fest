@@ -1,0 +1,10 @@
+//Шаблоны. Позволяют создавать библиотеки готового sass кода, который не компелируется в итоговый css файл, если мы не ипользуем шаблон.
+%button-style
+    @include style-link($color-gray)
+    font-size: 2rem
+    font-weight: 400
+    padding: 1.5rem 4rem
+    background: white
+    border-radius: 5rem
+    transition: all .3s
+    position: relative

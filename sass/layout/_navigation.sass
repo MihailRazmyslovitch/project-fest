@@ -1,0 +1,33 @@
+.navigation
+    position: sticky
+    z-index: 150
+    width: 100%
+    height: 70px
+    background: $color-white
+    display: flex
+    align-items: center
+    box-shadow: $box-shadow
+    &__list
+        list-style-type: none
+        animation: RightToLeft
+        animation-duration: 1.7s
+        animation-delay: 1s
+        animation-timing-function: ease
+        backface-visibility: hidden
+    &__item
+        display: inline
+        margin-right: 4.5rem
+    &__link
+        &:link, &:visited
+            @include style-link($color-black)
+            font-size: 2rem
+            font-weight: 400
+            font-style: normal
+    &__logo
+        margin-left: 15rem
+        margin-right: 30rem
+        animation: LeftToRight
+        animation-duration: 1.7s
+        animation-delay: 1s
+        animation-timing-function: ease
+        backface-visibility: hidden
