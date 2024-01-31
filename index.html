@@ -178,24 +178,24 @@
             <div class="form__container margin-bottom-40px margin-top-40px">
                 <div class="footer__book"></div>
                     <div class="z-index">
-                        <form action="" class="form">
+                        <form action="send.php" method="post" class="form">
                             <div class="margin-bottom-40px">
                                 <h2 class="title-footer">
                                     Оставьте заявку<br> и вам перезвонят!
                                 </h2>
                             </div>
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
+                                <input type="text" class="form__input" placeholder="Имя Фамилия" name="name" id="name" required>
                             </div>
                             <div class="form__group">
-                                <input type="tel" class="form__input" placeholder="Телефон" id="telephone" required>
+                                <input type="tel" class="form__input" placeholder="Телефон" id="telephone" name="phone" required>
                             </div>
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Ivanov@mail.com" id="email" required>
+                                <input type="email" class="form__input" placeholder="Ivanov@mail.com" id="email" name="email" required>
                                 <label for="email" class="form__lable">Почтовый адрес</label>
                             </div>
                             <div class="form__groop">
-                                <button class="btn_animated button">ОТПРАВИТЬ</button>
+                                <button type="submit" class="btn_animated button">ОТПРАВИТЬ</button>
                             </div>
                         </form>
                 </div>
