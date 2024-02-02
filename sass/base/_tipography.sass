@@ -23,13 +23,21 @@ body
     &__secondary
         display: block
         font-size: 4rem
-        font-weight: 100
+        font-weight: 500
         letter-spacing: .5rem
         animation: RightToLeft
         animation-duration: 1.7s
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
+        &_span
+            width: 31.5rem
+            height: 4.7rem
+            background: rgba($color-yellow, 0.35)
+            &-2
+                width: 40rem
+                height: 4.7rem
+                background: rgba($color-yellow, 0.35)
 
 .title-secondary
     font-size: $font-size-paragraph-h2
@@ -40,6 +48,7 @@ body
     color: transparent 
     transition: all .4s
     backface-visibility: hidden
+
     &:hover
         transform: skewY(2deg) skewX(12deg) scale(1.1) 
         text-shadow: $shadow-h2

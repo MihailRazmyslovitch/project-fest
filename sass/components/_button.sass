@@ -6,10 +6,11 @@
         font-size: 2rem
         font-weight: 400
         box-shadow: $box-shadow
+        &:hover
+            transform: scaleX(1.1) scaleY(1.1) 
+    &_animated
         animation: RightToLeft
         animation-duration: 1.7s
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
-        &:hover
-            transform: scaleX(1.1) scaleY(1.1) 
