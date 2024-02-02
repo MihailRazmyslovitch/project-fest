@@ -2,30 +2,37 @@
     height: 100vh
     width: 100%
     padding: 0 0 12% 12%
-    background: linear-gradient(90deg, rgba($color-black, 0.25), rgba($color-black, 0.25)), url(../img/фото.png) center / cover no-repeat
+    background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/photo-section__first.jpeg) center / cover no-repeat
     &__title 
-        color: $color-white
+        color: $color-gray
         &_2
             color: $color-black
             padding: 1.2rem 1.5rem
-            background: $color-white 
+            background: $color-gray
             font-weight: 300
             font-size: 48px
             width: 31rem
     &__title-paragraph
         color: $color-white
 
-
 .section-second
+    background: $color-gray
     padding: 3.5rem 0 0 0
     &__title-paragraph
         width: 84.5rem
+        @include paragraph($color-black)
+
+.section-third
+    background: $color-gray-dark
+    padding: 3.5rem 0 3.5rem 19rem
+    &__first-span
+        background: $color-yellow
         color: $color-black
-        font-family: Roboto
-        font-size: 20px
-        font-style: normal
-        font-weight: 300
-        line-height: normal
+        padding-left: .3rem
+    &__title-paragraph
+        width: 60rem
+        @include paragraph($color-white)
+        font-size: $font-size-paragraph
 
 
 
