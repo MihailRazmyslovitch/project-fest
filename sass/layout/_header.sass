@@ -2,11 +2,14 @@
     display: flex
     align-items: center
     position: relative
-    height: 50px
+    top: 7rem
+    height: 5rem
     background: $color-header
     color: $color-white
     &__item
         margin-left: 11.4%
+        position: absolute
+        z-index: 100
         &_2
             margin-right: 5rem
     &__text
@@ -14,6 +17,16 @@
         margin-left: 30px
         &:link, &:visited
             @include style-link($color-white)
+
+.gray
+    position: absolute
+    top: -5rem
+    left: 0
+    height: 10rem
+    width: 100vw
+    z-index: 0
+    background: $color-header
+
 
 .icon-clock
     position: absolute
