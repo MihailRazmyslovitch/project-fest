@@ -3,6 +3,26 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+    &_2
+        height: 33rem
+        position: relative
+        border-radius: 2.5rem
+    &_3
+        background: url(../img/организация-похорон.jpg) center / cover no-repeat
+        height: 33rem
+        width: 100%
+        position: absolute
+        z-index: 50
+        border-radius: 2.5rem
+    &__link
+        &:link, &:visited
+            @include style-link($color-gray)
+            height: 33rem
+            width: 100%
+            z-index: 100
+            border-radius: 2.5rem
+            position: absolute
+            z-index: 150
     &__img
         position: absolute
         height: 33rem

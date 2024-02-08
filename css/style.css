@@ -412,6 +412,31 @@ body {
   -moz-perspective: 150rem;
   position: relative;
 }
+.card_2 {
+  height: 33rem;
+  position: relative;
+  border-radius: 2.5rem;
+}
+.card_3 {
+  background: url(../img/организация-похорон.jpg) center/cover no-repeat;
+  height: 33rem;
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  border-radius: 2.5rem;
+}
+.card__link:link, .card__link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #d9d9d9;
+  height: 33rem;
+  width: 100%;
+  z-index: 100;
+  border-radius: 2.5rem;
+  position: absolute;
+  z-index: 150;
+}
 .card__img {
   position: absolute;
   height: 33rem;
@@ -459,12 +484,23 @@ body {
   transform: rotateY(0deg);
 }
 
+.telephone {
+  background: #d9d9d9;
+  border-radius: 10rem;
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  z-index: 150;
+  right: 5.5rem;
+  bottom: 5.5rem;
+  padding: 1rem;
+}
 .telephone__img {
   background: url(../icons/call-button.png) center/cover no-repeat;
   width: 5.5rem;
   height: 5.5rem;
   position: absolute;
-  z-index: 150;
+  z-index: 200;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -505,7 +541,6 @@ body {
 }
 
 .form {
-  width: 60%;
   padding: 2rem 0 0 4rem;
 }
 .form__group:not(:last-child) {
