@@ -7,9 +7,11 @@
         height: 50rem
         clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%)
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 3.24%, rgba(255, 255, 255, 0.90) 88.76%)
+        @include respond(tab-land)
+            width: 48rem
 .contact-menu
     position: absolute
-    top: 55rem
+    top: 550px
     left: 55%
     width: 45rem
     &__description
@@ -30,11 +32,7 @@
     width: 100%
     height: 8.8rem
     background: $color-black
-    display: flex
-    align-items: center
-    &__first
-        position: absolute
-        left: 11.4%
+    padding-top: 2rem
 
 
 

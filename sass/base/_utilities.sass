@@ -11,6 +11,10 @@
     justify-content: center
     align-items: center
 
+.align-items-center
+    display: flex
+    align-items: center
+
 .justify-content-end
     display: flex
     justify-content: end
@@ -18,18 +22,23 @@
 .position-right
     display: flex
     align-items: center
-    position: absolute
-    right: 11.4%
+    float: right
     &_2
         display: flex
         align-items: center
         position: absolute
         right: 15rem
 
+.float-left
+    float: left
+
 /* отступы сверху */
 
 .margin-top-5px
     margin-top: 0.5rem
+
+.margin-top-10px
+    margin-top: 1rem
 
 .margin-top-15px
     margin-top: 1.5rem
@@ -88,5 +97,9 @@
 .z-index
     position: relative
     z-index: 100
+
 .position-relative
     position: relative
+
+.margin-right-100px
+    margin-right: 10rem

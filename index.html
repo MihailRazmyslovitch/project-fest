@@ -29,33 +29,40 @@
 <body>
     <!-- nav menu -->
     <nav class="navigation">
-        <a href="index.html">
-            <img src="/icons/лого.svg" alt="" class="navigation__logo">
-        </a>
-        <div class="position-right_2">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="services.html" class="navigation__link">УСЛУГИ</a></li>
-                <li class="navigation__item"><a href="goods.html" class="navigation__link">ТОВАРЫ</a></li>
-            </ul>
-            <a href="contacts.html" class="btn btn_animated">Контакты</a>
+        <div class="row-header navigation__row">
+            <div class="navigation__big-item">
+                <a href="../index.html" class="navigation__link float-left">
+                    <img src="/icons/лого.svg" alt="navigation__logo" class="navigation__logo">
+                    <span class="icon--2 navigation__logo_2"><span class="path1"></span><span class="path2"></span></span>
+                </a>
+            </div>
+            <div class="position-right">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="../services-site/services.html" class="navigation__link">УСЛУГИ</a></li>
+                    <li class="navigation__item"><a href="../goods/goods.html" class="navigation__link">ТОВАРЫ</a></li>
+                    <li class="navigation__item"><a href="../contacts/contacts.html" class="btn btn_animated">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- header 24/7 -->
     <header class="header">
         <div class="gray">
         </div>
-        <div class="header__item">
-            <i class="icon-clock"></i>
-            <p class="header__text">Время работы 24/7</p>
-        </div>
-        <div class="position-right">
-            <div class="header__item_2">
-                <i class="icon-phone"></i>
-                <a href="tel:89517565000" class="header__text">8 (951) 756-50-00</a>
+        <div class="row-header">
+            <div class="header__item">
+                <i class="icon-clock"></i>
+                <p class="header__text">Время работы 24/7</p>
             </div>
-            <div class="header__item_3">
-                <i class="icon-mail3"></i>
-                <a href="mailto:flamingo_ritual@mail.ru" class="header__text">flamingo_ritual@mail.ru</a>
+            <div class="position-right">
+                <div class="header__item_2">
+                    <i class="icon-phone"></i>
+                    <a href="tel:89517565000" class="header__text">8 (951) 756-50-00</a>
+                </div>
+                <div class="header__item_3">
+                    <i class="icon-envelop"></i>
+                    <a href="mailto:flamingo_ritual@mail.ru" class="header__text">flamingo_ritual@mail.ru</a>
+                </div>
             </div>
         </div>
     </header>
@@ -69,7 +76,7 @@
     <main>
         <!-- первая секция -->
         <section class="section-first align-items-end">
-                <div>
+                <div class="row-section">
                     <span class="title-first__main section-first__title">РИТУАЛЬНОЕ АГЕНСТВО</span>
                     <span class="title-first__main section-first__title_2 margin-bottom-20px">ДОВЕРИЕ</span>
                     <span class="section-first__title-paragraph">Ознакомиться с полным каталогом товаров<br>и услуг для похорон можно на нашем сайте</span>
@@ -77,7 +84,7 @@
         </section>
         <!-- вторая секция -->
         <section class="section-second">
-            <div class="row">
+            <div class="row-header">
                 <p class="description margin-bottom-25px">организация похорон</p>
             </div>
             <div class="text-align-center margin-bottom-50px">
@@ -98,7 +105,7 @@
                             </div>
                             <div class="card__side card__side_back">
                                 <p class="card__side_back-text">В комплекс наших услуг входит копка могилы, захоронение и перевозка на катафальном транспорте во время всей процесии похорон.</p>
-                                <a href="contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
+                                <a href="contacts/contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +119,7 @@
                             </div>
                             <div class="card__side card__side_back">
                                 <p class="card__side_back-text">Подготовка гербового свидетельства о смерти и справки для получение пособия на погребения.</p>
-                                <a href="contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
+                                <a href="contacts/contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
                             </div>
                         </div>
                     </div>
@@ -126,55 +133,59 @@
                             </div>
                             <div class="card__side card__side_back">
                                 <p class="card__side_back-text">Транспортировка умерших в любой город РФ.</p>
-                                <a href="contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
+                                <a href="contacts/contacts.html" class="btn-card btn_animated">ЗАКАЗАТЬ</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-end margin-top-15px">
-                    <a href="services.html" class="btn btn_animated margin-bottom-50px">все услуги</a>
+                    <a href="services/services.html" class="btn-text margin-bottom-50px">все услуги</a>
                 </div>
         </section>
     <!-- третья секция -->
     <section class="section-third">
-        <p class="description margin-bottom-25px">организация похорон</p>
-        <h2 class="title-first__secondary color__white margin-bottom-25px"> <span class="section-third__first-span"> Достойные</span> похороны</h2>
-        <p class="section-third__title-paragraph color__white margin-bottom-25px">С другой стороны, повышение уровня гражданского сознания однозначно определяет каждого участника как способного принимать собственные решения касаемо кластеризации усилий.</p>
-        <div class="section-third__container margin-bottom-35px">
-            <div class="icons-container margin-bottom-30px">
-                <img src="/icons/badge (1) 1.svg" alt="" class="icons-container__icons">
-                <h2 class="icons-container__title margin-bottom-5px">Традиции</h2>
-                <p class="icons-container__description">Соблюдение традиций и следование религиозным обрядам</p>
-            </div>
-            <div class="icons-container">
-                <img src="/icons/document 1.svg" alt="" class="icons-container__icons">
-                <h2 class="icons-container__title margin-bottom-5px">Законность</h2>
-                <p class="icons-container__description">Организация погребения в соответствии с нормами Законодательства</p>
-            </div>
-            <div class="section-third__container_2">
-                <div class="icons-container margin-bottom-30px">
-                    <img src="/icons/padlock 1.svg" alt="" class="icons-container__icons">
-                    <h2 class="icons-container__title margin-bottom-5px">Приватность</h2>
-                    <p class="icons-container__description">Проведение закрытых похорон при соблюдении анонимности</p>
+        <div class="row-section">
+            <div class="z-index">
+                <p class="description margin-bottom-25px">организация похорон</p>
+                <h2 class="title-first__secondary color__white margin-bottom-25px"> <span class="section-third__first-span"> Достойные</span> похороны</h2>
+                <p class="section-third__title-paragraph color__white margin-bottom-25px">С другой стороны, повышение уровня гражданского сознания однозначно определяет каждого участника как способного принимать собственные решения касаемо кластеризации усилий.</p>
+                <div class="section-third__container margin-bottom-35px">
+                    <div class="icons-container margin-bottom-30px">
+                        <img src="/icons/badge (1) 1.svg" alt="" class="icons-container__icons">
+                        <h2 class="icons-container__title margin-bottom-5px">Традиции</h2>
+                        <p class="icons-container__description">Соблюдение традиций и следование религиозным обрядам</p>
+                    </div>
+                    <div class="icons-container">
+                        <img src="/icons/document 1.svg" alt="" class="icons-container__icons">
+                        <h2 class="icons-container__title margin-bottom-5px">Законность</h2>
+                        <p class="icons-container__description">Организация погребения в соответствии с нормами Законодательства</p>
+                    </div>
+                    <div class="section-third__container_2">
+                        <div class="icons-container margin-bottom-30px">
+                            <img src="/icons/padlock 1.svg" alt="" class="icons-container__icons">
+                            <h2 class="icons-container__title margin-bottom-5px">Приватность</h2>
+                            <p class="icons-container__description">Проведение закрытых похорон при соблюдении анонимности</p>
+                        </div>
+                    <div class="icons-container">
+                        <img src="/icons/education 1.svg" alt="" class="icons-container__icons">
+                        <h2 class="icons-container__title margin-bottom-5px">Экспертность</h2>
+                        <p class="icons-container__description">24 года на рынке ритуальных услуг</p>
+                    </div>
+                    </div>
                 </div>
-            <div class="icons-container">
-                <img src="/icons/education 1.svg" alt="" class="icons-container__icons">
-                <h2 class="icons-container__title margin-bottom-5px">Экспертность</h2>
-                <p class="icons-container__description">24 года на рынке ритуальных услуг</p>
-            </div>
+                <a href="contacts/contacts.html" class="btn btn_animated" id="footer-map">КОНТАКТЫ</a>
             </div>
         </div>
-        <a href="contacts.html" class="btn btn_animated">КОНТАКТЫ</a>
         <div class="section-third__container-img"></div>
     </section>
 <!-- футер -->
-    <footer class="footer" id="footer-map">
+    <footer class="footer">
         <div style="position:relative;overflow:hidden;">
             <a href="https://yandex.ru/maps/org/flamingo/1091280224/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Фламинго</a>
             <a href="https://yandex.ru/maps/10928/velikie-luky/category/funeral_services/184108367/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ритуальные услуги в Великих Луках</a>
             <a href="https://yandex.ru/maps/10928/velikie-luky/category/ritual_accessories/184108365/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Ритуальные принадлежности в Великих Луках</a>
             <iframe src="https://yandex.ru/map-widget/v1/org/flamingo/1091280224/?ll=30.543735%2C56.332419&z=12" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        <div class="row">
+        <div class="row-section">
             <div class="col-1-of-2">
                 <div class="form__container margin-bottom-40px margin-top-40px">
                     <div class="footer__book"></div>
@@ -224,13 +235,17 @@
             </div>
         </div>
         <div class="footer-end">
-                <div class="footer-end__first">
-                    <p class="footer__paragraph margin-bottom-5px">Кто умер, но не забыт, тот бессмертен.</p>
-                    <p class="footer__paragraph">Лао Цзы</p>
+            <div class="row-header">
+                <div class="header__item">
+                    <div class="footer-end__first">
+                        <p class="footer__paragraph margin-bottom-5px">Кто умер, но не забыт, тот бессмертен.</p>
+                        <p class="footer__paragraph">Лао Цзы</p>
+                    </div>
                 </div>
-                <div class="position-right">
-                    <a href="index.html" class="footer-end__second footer__paragraph_link">© 2000 - 2024 “Доверие” (Фламинго)</a>
-                </div>
+                    <div class="position-right margin-top-10px">
+                        <a href="index.html" class="footer-end__second footer__paragraph_link">© 2000 - 2024 “Доверие” (Фламинго)</a>
+                    </div>
+            </div>
         </div>
     </footer>
 </main>
