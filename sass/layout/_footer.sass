@@ -9,22 +9,29 @@
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 3.24%, rgba(255, 255, 255, 0.90) 88.76%)
         @include respond(tab-land)
             width: 48rem
+        @include respond(phone)
+            width: 100%
+            clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%)
 .contact-menu
-    position: absolute
-    top: 550px
-    left: 55%
     width: 45rem
+    margin-top: 4rem
+    margin-left: 5rem
+    @include respond(phone)
+        margin: 2rem auto
     &__description
         color: $color-white
         font-size: $font-size-paragraph-28
         font-weight: 400
         text-align: center
     &__contact
-        margin-left: 3rem
+        margin-left: 4.5rem
         color: $color-white
         font-size: $font-size-paragraph-h3
     &__icons
         position: absolute
+        width: 3rem
+        height: 3rem
+        margin-top: -0.3rem
 
 .footer-end
     position: relative

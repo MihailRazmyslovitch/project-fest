@@ -3,23 +3,18 @@
     width: 100%
     padding: 0 20% 12% 0
     background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/photo-section__first.jpeg) center / cover no-repeat
+    @include respond(tab-port)
+        padding: 0 20% 22% 0
+    @include respond(phone)
+        padding: 0 20% 26% 0
     &_footer
         background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/photo-footer.jpg) center / cover no-repeat
     &_services
                 background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/photo-footer.jpg) center / cover no-repeat
-    &__title 
-        color: $color-gray
-        &_2
-            color: $color-black
-            padding: 1.2rem 1.5rem
-            background: $color-gray
-            font-weight: 300
-            font-size: 48px
-            width: 31rem
-            @include respond(tab-land)
-                width: 33rem
     &__title-paragraph
         color: $color-white
+    &_monuments
+        padding: 0 13% 12% 0
 
 .section-second
     background: $color-white

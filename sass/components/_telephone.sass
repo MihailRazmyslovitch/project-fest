@@ -8,6 +8,9 @@
     right: 5.5rem
     bottom: 5.5rem
     padding: 1rem
+    @include respond(tab-port)
+        width: 7.5rem
+        height: 7.5rem
     &__img
         background: url(../icons/call-button.png) center / cover no-repeat
         width: 5.5rem
@@ -28,6 +31,9 @@
             right: 5.5rem
             bottom: 5.5rem
             padding: 1rem
+            @include respond(tab-port)
+                width: 7.5rem
+                height: 7.5rem
         &:hover
             transform: scale(1.1)
             &::after
@@ -47,3 +53,4 @@
             left: 0
             z-index: -3
             transition: all .4s
+        

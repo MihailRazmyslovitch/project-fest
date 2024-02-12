@@ -9,7 +9,9 @@
     @include respond(tab-land)
         max-width: 100rem
     @include respond(tab-port)
-        max-width: 60rem
+        max-width: 90rem
+    @include respond(phone)
+        max-width: 50rem
 
 .row-header
     max-width: $grid-width 
@@ -23,8 +25,7 @@
         max-width: 90.1rem
     @include respond(big-screen)
         max-width: 130rem
-
-
+    
 
 .row-section
     max-width: $grid-width 
@@ -71,7 +72,8 @@
     @include respond(tab-land)
         &:not(:last-child)
             margin-right: 2rem
-    @include respond(tab-port)
+    @include respond(phone)
         width: 100%
         margin-right: 0 !important
         margin-bottom: 4rem
+

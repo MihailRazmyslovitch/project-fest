@@ -36,10 +36,13 @@
 }
 .icon-phone:before {
   content: "\e942";
+  margin-top: -0.2rem;
 }
 .icon-envelop:before {
   content: "\e945";
+  margin-top: -0.2rem;
 }
 .icon-clock:before {
   content: "\e94e";
+  margin-top: -0.2rem;
 }

@@ -10,16 +10,26 @@
         z-index: 100
         &_2
             margin-right: 5rem
+            @include respond(phone)
+                margin-right: 2rem
     &__text
         font-size: $font-size-paragraph
         margin-left: 3rem
         &:link, &:visited
             @include style-link($color-white)
+    @include respond(tab-port)
+        height: 13.5rem
+    @include respond(phone)
+        height: 15.5rem
 
 .gray
     height: 9rem
     width: 100vw
     background: $color-gray-dark
+    @include respond(tab-port)
+        height: 10rem
+    @include respond(phone)
+        height: 11.5rem
 
 
 .icon-clock
