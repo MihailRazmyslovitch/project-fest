@@ -166,6 +166,11 @@ body {
   text-align: center;
   font-weight: 400;
 }
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__text {
+    font-size: 2.4rem;
+  }
+}
 
 .footer__paragraph {
   color: #fff;
@@ -529,6 +534,11 @@ body {
   -moz-perspective: 150rem;
   position: relative;
 }
+@media only screen and (max-width: 900px), (hover: none) {
+  .card {
+    height: auto;
+  }
+}
 .card_2 {
   height: 33rem;
   position: relative;
@@ -560,10 +570,20 @@ body {
   width: 100%;
   z-index: 50;
 }
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__img {
+    height: 32rem;
+  }
+}
 .card__text {
   margin-top: 21rem;
   color: #d9d9d9;
   z-index: 100;
+}
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__text {
+    margin-bottom: 2.5rem;
+  }
 }
 .card__side {
   width: 100%;
@@ -580,13 +600,34 @@ body {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__side {
+    height: auto;
+    position: relative;
+    border-radius: 0;
+  }
+}
 .card__side_front {
   background: #d9d9d9;
+}
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__side_front {
+    z-index: 150;
+  }
 }
 .card__side_back {
   transform: rotateY(180deg);
   background: #303030;
   padding: 3.5rem 3.8rem 3.5rem 3.8rem;
+}
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__side_back {
+    transform: rotateY(0deg);
+    padding: 5rem;
+    padding-top: 2.5rem;
+    z-index: 200;
+    border-radius: 0px 0px 25px 25px;
+  }
 }
 .card__side_back-text {
   color: #fff;
@@ -594,8 +635,18 @@ body {
   text-align: center;
   font-weight: 400;
 }
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__side_back-text {
+    margin-bottom: 5rem;
+  }
+}
 .card:hover .card__side_front {
   transform: rotateY(-180deg);
+}
+@media only screen and (max-width: 900px) {
+  .card:hover .card__side_front {
+    transform: rotateY(0deg);
+  }
 }
 .card:hover .card__side_back {
   transform: rotateY(0deg);

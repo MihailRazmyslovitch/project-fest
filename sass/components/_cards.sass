@@ -3,6 +3,8 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+    @media only screen and (max-width: 900px), (hover: none)
+        height: auto
     &_2
         height: 33rem
         position: relative
@@ -28,10 +30,14 @@
         height: 33rem
         width: 100%
         z-index: 50
+        @media only screen and (max-width: 900px), (hover: none)
+            height: 32rem
     &__text
         margin-top: 21rem
         color: $color-gray
         z-index: 100
+        @media only screen and (max-width: 900px), (hover: none)
+            margin-bottom: 2.5rem
     &__side
         width: 100%
         position: absolute
@@ -46,18 +52,34 @@
         box-shadow: $box-shadow
         display: flex
         justify-content: center
+        @media only screen and (max-width: 900px), (hover: none)
+            height: auto
+            position: relative
+            border-radius: 0
         &_front
             background: $color-gray
+            @media only screen and (max-width: 900px), (hover: none)
+                z-index: 150
         &_back
             transform: rotateY(180deg)
             background: $color-gray-dark
             padding: 3.5rem 3.8rem 3.5rem 3.8rem
+            @media only screen and (max-width: 900px), (hover: none)
+                transform: rotateY(0deg)
+                padding: 5rem
+                padding-top: 2.5rem
+                z-index: 200
+                border-radius: 0px 0px 25px 25px
             &-text
                 color: $color-white
                 font-size: $font-size-paragraph-h3
                 text-align: center
                 font-weight: 400
+                @media only screen and (max-width: 900px), (hover: none)
+                    margin-bottom: 5rem
     &:hover &__side_front
         transform: rotateY(-180deg)
+        @include respond(tab-port)
+            transform: rotateY(0deg)
     &:hover &__side_back
         transform: rotateY(0deg)
