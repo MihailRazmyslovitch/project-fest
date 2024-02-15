@@ -653,15 +653,16 @@ body {
 }
 
 .telephone {
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 10rem;
   width: 6rem;
   height: 6rem;
   position: fixed;
   z-index: 150;
-  right: 5.5rem;
-  bottom: 5.5rem;
+  right: 4.5rem;
+  bottom: 4.5rem;
   padding: 1rem;
+  box-shadow: 0rem 1.5rem 4rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 @media only screen and (max-width: 900px) {
   .telephone {
@@ -686,8 +687,8 @@ body {
   height: 6rem;
   position: fixed;
   z-index: 100;
-  right: 5.5rem;
-  bottom: 5.5rem;
+  right: 4.5rem;
+  bottom: 4.5rem;
   padding: 1rem;
 }
 @media only screen and (max-width: 900px) {
