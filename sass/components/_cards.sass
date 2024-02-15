@@ -5,6 +5,11 @@
     position: relative
     @media only screen and (max-width: 900px), (hover: none)
         height: auto
+    &_goods
+        height: 33rem
+        perspective: 150rem
+        -moz-perspective: 150rem
+        position: relative
     &_2
         height: 33rem
         position: relative
@@ -56,6 +61,20 @@
             height: auto
             position: relative
             border-radius: 0
+        &_goods 
+            width: 100%
+            position: absolute
+            top: 0
+            left: 0
+            height: 33rem
+            transition: .3s all ease-out
+            color: $color-gray
+            border-radius: 2.5rem
+            overflow: hidden
+            backface-visibility: hidden
+            box-shadow: $box-shadow
+            display: flex
+            justify-content: center
         &_front
             background: $color-gray
             @media only screen and (max-width: 900px), (hover: none)

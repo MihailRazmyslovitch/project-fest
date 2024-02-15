@@ -539,6 +539,12 @@ body {
     height: auto;
   }
 }
+.card_goods {
+  height: 33rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
 .card_2 {
   height: 33rem;
   position: relative;
@@ -606,6 +612,21 @@ body {
     position: relative;
     border-radius: 0;
   }
+}
+.card__side_goods {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33rem;
+  transition: 0.3s all ease-out;
+  color: #d9d9d9;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
 }
 .card__side_front {
   background: #d9d9d9;
@@ -828,7 +849,7 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .row {
-    max-width: 50rem;
+    max-width: 40rem;
   }
 }
 
