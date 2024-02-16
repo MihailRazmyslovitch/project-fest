@@ -171,6 +171,16 @@ body {
     font-size: 2.4rem;
   }
 }
+.card__text_black {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 400;
+}
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__text {
+    font-size: 2.4rem;
+  }
+}
 
 .footer__paragraph {
   color: #fff;
@@ -558,6 +568,10 @@ body {
   z-index: 50;
   border-radius: 2.5rem;
 }
+.card__span {
+  padding: 0.5rem;
+  background: #303030;
+}
 .card__link:link, .card__link:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -584,6 +598,16 @@ body {
 .card__text {
   margin-top: 21rem;
   color: #fff;
+  z-index: 100;
+}
+@media only screen and (max-width: 900px), (hover: none) {
+  .card__text {
+    margin-bottom: 2.5rem;
+  }
+}
+.card__text_black {
+  margin-top: 21rem;
+  color: #000;
   z-index: 100;
 }
 @media only screen and (max-width: 900px), (hover: none) {
