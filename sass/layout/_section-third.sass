@@ -4,6 +4,8 @@
         position: relative
         width: 45.5rem
         height: 22rem
+        @include respond(phone)
+            height: 42rem
         &-img
             position: absolute
             background: url(../img/img-section-3.jpg) center / cover no-repeat
@@ -19,6 +21,9 @@
             position: absolute
             top: 0
             left: 29rem
+            @include respond(phone)
+                margin-top: 3rem
+                position: static
 .icons-container
     width: 26rem
     height: 9rem
