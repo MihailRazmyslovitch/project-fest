@@ -8,6 +8,8 @@
     background: $color-white
     box-shadow: $box-shadow
     padding-top: 2.2rem
+    &__row
+        position: relative
     &__list
         display: flex
         flex-direction: row
@@ -21,6 +23,8 @@
     &__item
         display: inline
         margin-right: 4.5rem
+        @include respond(phone)
+            margin-right: 0
     &__big-item
         position: absolute
         z-index: 125
@@ -32,6 +36,9 @@
             font-size: 2rem
             font-weight: 400
             font-style: normal
+            @include respond(phone)
+                font-size: 2.4rem
+                font-weight: 500
     &__logo
         animation: LeftToRight
         animation-duration: 1.7s
@@ -42,7 +49,7 @@
             display: none
         &_2
             font-size: 3.6rem
-            display: none
+            margin-left: 4rem
             @include respond(tab-land)
                 display: block  
     @include respond(tab-port)
@@ -51,3 +58,54 @@
     @include respond(phone)
         height: 9rem
         padding-top: 3rem
+
+
+@media (max-width: 640px)
+    .nav-menu
+        position: fixed
+        top: 0 
+        right: -100%
+        height: 100vh
+        width: 50%
+        background: $color-white
+        z-index: 10
+        transition: 0.6s
+    .navigation
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+    .hamburger
+        width: 25px
+        position: absolute
+        top: 0.3rem
+        right: -7rem
+        height: 14px
+        z-index: 200
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: $color-black
+            margin-bottom: 3px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg) 
+    .nav-menu_active
+        display: block
+        right: 0px
+
+
+@media (max-width: 540px)
+    .hamburger
+        right: 3rem

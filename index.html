@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link disabled href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icon-fonts.css">
     <title>Ритуальные услуги в Великих Луках и Псковской области</title>
@@ -30,17 +30,18 @@
     <!-- nav menu -->
     <nav class="navigation">
         <div class="row-header navigation__row">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="navigation__big-item">
                 <a href="../index.html" class="navigation__link float-left">
                     <img src="/icons/лого.svg" loading="lazy" alt="navigation__logo" class="navigation__logo">
                     <span class="icon--2 navigation__logo_2"><span class="path1"></span><span class="path2"></span></span>
                 </a>
             </div>
-            <div class="position-right">
-                <input type="checkbox" class="navigation__toggle" id="navin-toggle">
-            <label for="navin-toggle" class="navigation__button">
-                <span class="navigation__icon"></span>
-            </label>
+            <div class="position-right nav-menu">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="../services-site/services.html" class="navigation__link">УСЛУГИ</a></li>
                     <li class="navigation__item"><a href="../goods/goods.html" class="navigation__link">ТОВАРЫ</a></li>
@@ -264,8 +265,6 @@
         </div>
     </footer>
 </main>
-
-
 <script src="js/script.js"></script>
 
 

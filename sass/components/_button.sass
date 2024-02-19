@@ -8,6 +8,8 @@
         box-shadow: $box-shadow
         &:hover
             transform: scaleX(1.1) scaleY(1.1) 
+        @include respond(phone)
+            font-size: 2.4rem
     &_animated
         animation: RightToLeft
         animation-duration: 1.7s
