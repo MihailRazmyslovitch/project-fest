@@ -3,10 +3,14 @@
     width: 100%
     padding: 0 20% 12% 0
     background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/logo.jpeg) center / cover no-repeat
+    @include respond(tab-land)
+        height: 85vh
     @include respond(tab-port)
         padding: 0 20% 22% 0
+        height: 70vh
     @include respond(phone)
         padding: 0 20% 26% 0
+        height: 50vh
     &_footer
         background: linear-gradient(90deg, rgba($color-black, 0.40), rgba($color-black, 0.40)), url(../img/logo.jpeg) center / cover no-repeat
     &_services
