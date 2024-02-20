@@ -12,6 +12,11 @@
     @include respond(tab-port)
         width: 7.5rem
         height: 7.5rem
+    @include respond(phone)
+        width: 6.5rem
+        height: 6.5rem
+        right: 2.5rem
+        bottom: 2.5rem
     &__img
         background: url(../icons/call-button.png) center / cover no-repeat
         width: 5.5rem
@@ -35,6 +40,11 @@
             @include respond(tab-port)
                 width: 7.5rem
                 height: 7.5rem
+            @include respond(phone)
+                width: 6.5rem
+                height: 6.5rem
+                right: 2.5rem
+                bottom: 2.5rem
         &:hover
             transform: scale(1.1)
             &::after

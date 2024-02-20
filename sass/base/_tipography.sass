@@ -20,6 +20,8 @@ body
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
+        @include respond(phone)
+            font-size: 3.6rem
     &__secondary
         display: block
         font-size: 4rem
@@ -122,3 +124,5 @@ body
             font-weight: 300
             font-size: 4.8rem
             width: 31rem
+            @include respond(phone)
+                font-size: 3.6rem
