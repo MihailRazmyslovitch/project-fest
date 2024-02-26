@@ -18,6 +18,11 @@
     margin-left: 5rem
     @include respond(phone)
         margin: 2rem auto
+    &__tel
+        &:link, &:visited
+            @include style-link($color-white)
+            margin-left: 4.5rem
+            font-size: 2rem
     &__description
         color: $color-white
         font-size: $font-size-paragraph-28
