@@ -5,7 +5,7 @@
         width: 45.5rem
         height: 22rem
         @include respond(phone)
-            height: 42rem
+            display: none
         &-img
             position: absolute
             background: url(../img/img-section-3.jpg) center / cover no-repeat
@@ -26,19 +26,27 @@
                 position: static
 .icons-container
     width: 26rem
-    height: 9rem
+    height: auto
+    @include respond(phone)
+        text-align: center
     &__description
         font-size: $font-size-paragraph
         font-weight: 400
         color: $color-white
         text-align: left
+        @include respond(phone)
+            text-align: center
     &__title
         margin-left: 3rem
         font-size: 2.2rem
         font-weight: 400
         color: $color-white
+        @include respond(phone)
+            margin-left: 0
     &__icons
         width: 2.5rem
         height: 2.5rem
         position: absolute
+        @include respond(phone)
+            position: static
 

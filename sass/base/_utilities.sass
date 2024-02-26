@@ -23,6 +23,21 @@
     &:link, &:visited
         text-decoration: none
 
+.phone-display-none
+    @include respond(phone)
+        display: none
+
+.no-phone-display-none
+    display: none
+    @include respond(phone)
+        display: block
+
+.flex 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
 .position-right
     display: flex
     align-items: center
@@ -72,6 +87,8 @@
     margin-top: 25rem
 
 /* отступы снизу */
+.margin-bottom-0px
+    margin-bottom: 0rem
 
 .margin-bottom-5px
     margin-bottom: 0.5rem
