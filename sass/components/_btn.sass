@@ -1,0 +1,22 @@
+.btn
+    &:link, &:visited
+        @include style-link($color-black)
+        padding: .6rem 1.6rem
+        background: $color-orange
+        font-size: 1.6rem
+        font-weight: 400
+        box-shadow: $box-shadow
+        position: absolute
+        right: -8rem
+        border-radius: 9rem
+        &:hover
+            transform: scaleX(1.1) scaleY(1.1) 
+            color: $color-white
+        @include respond(phone)
+            font-size: 2.4rem
+    &_animated
+        animation: RightToLeft
+        animation-duration: 1.7s
+        animation-delay: 1s
+        animation-timing-function: ease
+        backface-visibility: hidden
