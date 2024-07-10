@@ -1,0 +1,56 @@
+.widget
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 200
+    background: rgba(250, 250, 250, 0.5)
+    width: 40%
+    height: 800px
+    transition: 0.6s all
+    padding: 10rem 6.5rem 6rem 25rem
+    &__is-open
+        width: 65%
+    &__days
+        position: relative
+        width: 15rem
+        left: 5rem
+        top: 15rem
+        display: inline-flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: flex-start
+        &::after
+            content: ''
+            position: absolute
+            left: 190px
+            top: 0
+            width: 2px
+            height: 100%
+            background: $color-orange
+            opacity: 1
+            transition: all .3s
+    &__day
+        font-size: 4.8rem
+        font-weight: 300
+        color: #545454
+        &_is-hovered
+            position: absolute
+            left: 1.5rem
+            top: 1rem
+            font-size: 3.2rem
+            font-weight: 500
+            color: $color-orange
+            text-transform: uppercase
+            -webkit-transition: all .3s
+            transition: all .3s
+        &_is-selected
+            color: $color-orange
+            font-weight: 400
+
+
+
+
+
+
+
+
