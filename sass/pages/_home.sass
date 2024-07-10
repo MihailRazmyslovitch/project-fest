@@ -6,13 +6,22 @@
     background: gray
 .widget
     position: absolute
-    left: 0
     top: 0
+    left: 0
     z-index: 200
     background: $color-white
     opacity: 0.5
-    width: 51rem
+    width: 33%
     height: 100%
+    &-active
+        position: absolute
+        top: 0
+        left: 33%
+        z-index: 200
+        background: $color-white
+        opacity: 0.5
+        width: 33%
+        height: 100%
     &__day
         font-size: 3.2rem
         font-weight: 400
