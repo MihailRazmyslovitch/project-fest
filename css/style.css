@@ -218,6 +218,14 @@ body {
   margin-top: 25rem;
 }
 
+.margin-top-300px {
+  margin-top: 30rem;
+}
+
+.margin-top-325px {
+  margin-top: 32.5rem;
+}
+
 /* отступы снизу */
 .margin-bottom-0px {
   margin-bottom: 0rem;
@@ -300,6 +308,10 @@ body {
 
 .opasity-0 {
   opacity: 0;
+}
+
+.transform-rotate-180 {
+  transform: rotate(180deg);
 }
 
 .telephone {
@@ -469,15 +481,17 @@ body {
   backface-visibility: hidden;
 }
 
-.btn-widget:link, .btn-widget:visited {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
+.btn-widget {
+  position: absolute;
+  right: -2.7rem;
+  top: 10rem;
+  border: 0;
+  border-radius: 6rem;
   width: 5.6rem;
+  height: 5.6rem;
 }
 .btn-widget:hover {
-  transform: scale(1.1);
+  transform: translateX(0.5rem);
 }
 .btn-widget:hover::after {
   opacity: 0;
@@ -488,7 +502,7 @@ body {
 }
 .btn-widget::after {
   content: "";
-  background: white;
+  background: rgba(250, 250, 250, 0.9);
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -505,14 +519,15 @@ body {
   top: 0;
   left: 0;
   z-index: 200;
-  background: rgba(250, 250, 250, 0.5);
+  background: rgba(250, 250, 250, 0.9);
   width: 40%;
-  height: 800px;
+  height: 100vh;
   transition: 0.6s all;
-  padding: 10rem 6.5rem 6rem 25rem;
+  padding: 10rem 0 6rem 25rem;
 }
 .widget__is-open {
   width: 65%;
+  opacity: 1;
 }
 .widget__days {
   position: relative;
@@ -534,6 +549,7 @@ body {
   background: #EAA47D;
   opacity: 1;
   transition: all 0.3s;
+  opacity: 0;
 }
 .widget__day {
   font-size: 4.8rem;
@@ -710,8 +726,8 @@ body {
 .section-first {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   z-index: 1;
-  background: gray;
+  background: url(../img/schedule-bg.png) center/cover no-repeat;
   overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
