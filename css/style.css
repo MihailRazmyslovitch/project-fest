@@ -89,6 +89,11 @@ body {
   font-size: 1.6rem;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
 /* позицианирование */
 .text-align-center {
   text-align: center;
@@ -410,10 +415,19 @@ body {
   box-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.1);
 }
 .nav__title {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
   font-size: 2.5rem;
+  font-weight: 400;
 }
 .nav__title-desc {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
   font-size: 1.1rem;
+  font-weight: 300;
 }
 .nav__logo {
   width: 27.2rem;
@@ -443,10 +457,12 @@ body {
 }
 .navigation__item:hover {
   cursor: pointer;
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
   color: #EAA47D;
 }
 .navigation__arrow {
+  width: 2.5rem;
+  height: 2.5rem;
   transform: translateY(0.2rem);
 }
 
@@ -465,7 +481,7 @@ body {
   border-radius: 9rem;
 }
 .btn:link:hover, .btn:visited:hover {
-  transform: scaleX(1.1) scaleY(1.1);
+  transform: scaleX(1.05) scaleY(1.05);
   color: #fff;
 }
 @media only screen and (max-width: 640px) {
@@ -479,6 +495,11 @@ body {
   animation-delay: 1s;
   animation-timing-function: ease;
   backface-visibility: hidden;
+}
+.btn__img {
+  width: 1.7rem;
+  height: 1.7rem;
+  transform: translateY(0.2rem);
 }
 
 .btn-widget {
@@ -533,23 +554,11 @@ body {
   position: relative;
   width: 15rem;
   left: 5rem;
-  top: 15rem;
+  top: 20rem;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-}
-.widget__days::after {
-  content: "";
-  position: absolute;
-  left: 190px;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: #EAA47D;
-  opacity: 1;
-  transition: all 0.3s;
-  opacity: 0;
 }
 .widget__day {
   font-size: 4.8rem;
@@ -570,6 +579,16 @@ body {
 .widget__day_is-selected {
   color: #EAA47D;
   font-weight: 400;
+}
+.widget__line {
+  position: absolute;
+  left: 190px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #EAA47D;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 .row {
@@ -730,4 +749,12 @@ body {
   z-index: 1;
   background: url(../img/schedule-bg.png) center/cover no-repeat;
   overflow: hidden;
+}
+
+.section-third {
+  padding: 5rem 0 10rem 0;
+}
+
+.opasity-1 {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

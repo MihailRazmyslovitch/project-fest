@@ -21,36 +21,45 @@
 
     <nav class="nav">
         <div class="nav__menu row-header">
-            <img class="nav__logo-img margin-right-10px" src="/img/logo.svg" alt="">
+            <a href="index.html"><img class="nav__logo-img margin-right-10px" src="/img/logo.svg" alt=""></a>
             <div class="nav__logo margin-right-20px">
-                <p class="nav__title">А МУЗЫ НЕ МОЛЧАТ</p>
-                <p class="nav__title-desc">всероссийский фестиваль фронтовой поэзии</p>
+                <a class="index.html" href="index.html">
+                    <h1 class="nav__title">А МУЗЫ НЕ МОЛЧАТ</h1>
+                    <h2 class="nav__title-desc">всероссийский фестиваль фронтовой поэзии</h2>
+                </a>
             </div>
             <div class="navigation">
-                <div class="navigation__item margin-right-20px">
+                <div class="navigation__item navigation__item_arr margin-right-20px">
                 <p>о фестивале</p>
-                <img src="/icons/Rectangle 31.svg" class="navigation__arrow" alt="">
+                <img class="navigation__arrow" src="icons/arrow-black.png"  alt="">
                 </div>
                 <p class="navigation__item margin-right-20px">новости</p>
                 <p class="navigation__item margin-right-20px">галерея</p>
                 <p class="navigation__item margin-right-20px">контакты</p>
                 <p class="navigation__item margin-right-20px">участники</p>
             </div>
-            <a href="contacts/contacts.html" class="btn btn_animated">скачать заявку <img src="/icons/image 3.svg" alt=""></a>
+            <a href="contacts/contacts.html" class="btn btn_animated">скачать заявку <img class="btn__img" src="/icons/btn-img-black.png" alt=""></a>
         </div>
     </nav>
     <!-- section 1 -->
-
     <section class="section-first">
         <div class="widget ">
                 <div class="widget__days">
                     <div class="widget__day_is-hovered" style="transform: translateY(0rem);">день</div>
                     <p class="widget__day margin-bottom-20px widget__day_is-selected">1</p>
-                    <p class="widget__day">2</p>
+                    <p class="widget__day widget__day_2">2</p>
+                    <div class="widget__line"></div>
                 </div>
                 <button class="btn-widget margin-top-325px">
-                    <img src="/icons/image 1.svg" alt="">
+                    <img class="btn-widget_img" src="/icons/image 1.svg" alt="">
                 </button>
+        </div>
+    </section>
+    <!-- section 3 -->
+    <section class="section-third">
+        <div class="row">
+            <p class="title margin-bottom-50px">Как добраться</p>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/derevnya_borki/53139659/?ll=30.246916%2C56.081929&utm_medium=mapframe&utm_source=maps&z=15.43" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Борки — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.246916%2C56.081929&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEzOTY1ORKYAdCg0L7RgdGB0LjRjywg0J_RgdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQktC10LvQuNC60L7Qu9GD0LrRgdC60LjQuSDRgNCw0LnQvtC9LCDQn9C-0YDQtdGH0LXQvdGB0LrQsNGPINCy0L7Qu9C-0YHRgtGMLCDQtNC10YDQtdCy0L3RjyDQkdC-0YDQutC4IgoNMv3xQRUTUmBC&z=15.43" width="1140" height="630" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
     </section>
     <script src="js/script.js"></script>

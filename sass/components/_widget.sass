@@ -15,22 +15,11 @@
         position: relative
         width: 15rem
         left: 5rem
-        top: 15rem
+        top: 20rem
         display: inline-flex
         flex-direction: column
         align-items: flex-end
         justify-content: flex-start
-        &::after
-            content: ''
-            position: absolute
-            left: 190px
-            top: 0
-            width: 2px
-            height: 100%
-            background: $color-orange
-            opacity: 1
-            transition: all .3s
-            opacity: 0
     &__day
         font-size: 4.8rem
         font-weight: 300
@@ -48,6 +37,15 @@
         &_is-selected
             color: $color-orange
             font-weight: 400
+    &__line
+        position: absolute
+        left: 190px
+        top: 0
+        width: 2px
+        height: 100%
+        background: #EAA47D
+        opacity: 0
+        transition: all 0.3s
 
 
 
