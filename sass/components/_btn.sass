@@ -51,3 +51,36 @@
         left: 0
         z-index: -3
         transition: all .4s
+
+
+
+
+.btn-desc
+    @include style-link($color-black)
+    padding: 1rem 2rem
+    background: $color-orange
+    font-size: 1.8rem
+    font-weight: 400
+    box-shadow: $box-shadow
+    border: none
+    border-radius: 9rem
+    &:hover
+        transform: scaleX(1.05) scaleY(1.05)  
+        color: $color-white
+
+.btn-card
+    &:link, &:visited
+        font-size: $font-size-paragraph
+        font-weight: 700
+        text-decoration: none
+        color: $color-brown
+        padding: 1rem
+        border-bottom: 2px $color-brown solid 
+        display: inline-block
+    &:hover
+        background: $color-brown
+        color: $color-white
+        box-shadow: $shadow-h2
+        transform: translateY(-0.2rem)
+    &:active
+        transform: translateY(0rem)
