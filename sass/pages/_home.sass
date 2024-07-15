@@ -50,16 +50,46 @@
     &__name 
         font-size: 3rem
         font-weight: 400
+
 .contacts
-    &-arrow 
-        width: 2rem
-        height: 2rem
-.gallery
-    &-first__section
+    &__items
+        position: relative
+
+.visitors-section
+    &__background
         width: 100%
         height: 54rem
         background: $color-gray
     &__desc
-        font-size: 24px
-        font-weight: 300
+        font-size: 20px
+        font-weight: 400
+
+.history-section
+    &__background
+        width: 100%
+        height: 54rem
+        background: $color-gray
+    &__desc
+        font-size: 20px
+        font-weight: 400
+    &__img
+        width: 100%
+        height: 40rem
+        background: $color-gray
+
+.style-link
+    &:link, &:visited
+        text-decoration: none
+        color: $color-black
+        font-weight: 500
+        &:hover
+            color: $color-orange
+    &__arrow 
+        width: 1.5rem
+        height: 1.5rem
+        &_2
+            width: 1.5rem
+            height: 1.5rem
+            transform: rotate(180deg)
+
 

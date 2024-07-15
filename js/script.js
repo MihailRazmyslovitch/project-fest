@@ -79,7 +79,6 @@ day_2.addEventListener("click", ()=>{
 nav_item_arr.addEventListener("mouseover", ()=>{
     nav_img_arr.src = "icons/arrow-orange.png"
     nav_img_arr.style.transform = "rotate(180deg) translateY(-0.2rem)"
-    nav_item_arr_desc.classList.add("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
 })
 
@@ -87,18 +86,17 @@ nav_item_arr.addEventListener("mouseover", ()=>{
 nav_item_arr.addEventListener("mouseout", ()=>{
     nav_img_arr.src = "icons/arrow-black.png"
     nav_img_arr.style.transform = "rotate(0deg) translateY(0.2rem)"
-    nav_item_arr_desc.classList.remove("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
 })
 
 /* наведение на эллементы нав меню 2 уровня */
 nav_levl_2.addEventListener("mouseover", ()=>{
-    nav_item_arr_desc.classList.add(".color-orange")
+    nav_item_arr_desc.classList.add("color-orange")
 })
 
 /* наведение на эллементы нав меню 2 уровня */
 nav_levl_2.addEventListener("mouseout", ()=>{
-    nav_item_arr_desc.classList.remove(".color-orange")
+    nav_item_arr_desc.classList.remove("color-orange")
 })
 
 /* открашивание иконки загрузки при наведении */
