@@ -77,7 +77,7 @@ day_2.addEventListener("click", ()=>{
 
 /* наведение на эллемент нав меню со стрелочкой, функция ОТКРЫВАЕТ 2 уровень нав меню, окрашивает цвет текста, окрашивает стрелку и переваречивает ее */
 nav_item_arr.addEventListener("mouseover", ()=>{
-    nav_img_arr.src = "../icons/arrow-orange.png"
+    nav_img_arr.src = "icons/arrow-orange.png"
     nav_img_arr.style.transform = "rotate(180deg) translateY(-0.2rem)"
     nav_item_arr_desc.classList.add("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
@@ -85,7 +85,7 @@ nav_item_arr.addEventListener("mouseover", ()=>{
 
 /* наведение на эллемент нав меню со стрелочкой, функция ЗАКРЫВАЕТ 2 уровень нав меню, окрашивает цвет текста, окрашивает стрелку и переваречивает ее */
 nav_item_arr.addEventListener("mouseout", ()=>{
-    nav_img_arr.src = "../icons/arrow-black.png"
+    nav_img_arr.src = "icons/arrow-black.png"
     nav_img_arr.style.transform = "rotate(0deg) translateY(0.2rem)"
     nav_item_arr_desc.classList.remove("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
@@ -103,12 +103,12 @@ nav_levl_2.addEventListener("mouseout", ()=>{
 
 /* открашивание иконки загрузки при наведении */
 btn.addEventListener("mouseover", ()=>{
-    btn_img.src = "../icons/btn-img-white.png"
+    btn_img.src = "icons/btn-img-white.png"
 })
 
 /* открашивание иконки загрузки при наведении */
 btn.addEventListener("mouseout", ()=>{
-    btn_img.src = "../icons/btn-img-black.png"
+    btn_img.src = "icons/btn-img-black.png"
 })
 
 /* наведение на эллементы нав меню 2 уровня */
@@ -125,47 +125,37 @@ for(let value of nav_items){
 
 /* изменение цвета стрелки при наведении во 2 и 3 секции */
 sub_title.addEventListener("mouseover", ()=>{
-    sub_title_img.src = "../icons/arr-left-orange.png"
+    sub_title_img.src = "/icons/arr-left-orange.png"
 })
 
 sub_title.addEventListener("mouseout", ()=>{
-    sub_title_img.src = "../icons/arr-left.png"
+    sub_title_img.src = "/icons/arr-left.png"
 })
 
 sub_title_2.addEventListener("mouseover", ()=>{
-    sub_title_img_2.src = "../icons/arr-left-orange.png"
+    sub_title_img_2.src = "/icons/arr-left-orange.png"
 })
 
 sub_title_2.addEventListener("mouseout", ()=>{
-    sub_title_img_2.src = "../icons/arr-left.png"
+    sub_title_img_2.src = "/icons/arr-left.png"
 })
 
 
 /* при наведении картинка галлереи блюрится */
 for(let value of galleryItem){
         value.addEventListener("mouseover", ()=>{
-            if(galleryItem[0] == galleryItemHover[0]){
-                galleryItemHover[0].classList.remove("display-none")
+            if(value.classList.contains("gallery__item__hover") == false){
+                value.classList.add("gallery__item__hover")
+                value.innerHTML = '<img src="/img/img-1.jpeg" alt="" class="gallery__item-img"><div class="gallery__item_is-hovered"><h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4><a href="#" class="btn-card">Узнать больше &rarr;</a></div>'
             }
-            if(galleryItem[1] == galleryItemHover[1]){
-                galleryItemHover[1].classList.remove("display-none")
-            }
-            if(galleryItem[2] == galleryItemHover[2]){
-                galleryItemHover[2].classList.remove("display-none")
-            }
-            if(galleryItem[3] == galleryItemHover[3]){
-                galleryItemHover[3].classList.remove("display-none")
-            }
-            if(galleryItem[4] == galleryItemHover[4]){
-                galleryItemHover[4].classList.remove("display-none")
-            }
-            if(galleryItem[5] == galleryItemHover[5]){
-                galleryItemHover[5].classList.remove("display-none")
+        })
+        value.addEventListener("mouseout", ()=>{
+            if(value.classList.contains("gallery__item__hover") == true){
+                value.classList.remove("gallery__item__hover")
+                value.innerHTML = '<img src="/img/img-1.jpeg" alt="" class="gallery__item-img">'
             }
         })
     /* value.addEventListener("mouseout", ()=>{
         value.lastChild.classList.remove("display-none")
     }) */
 }
-
-console.log(galleryItem.length == galleryItemHover.length);
