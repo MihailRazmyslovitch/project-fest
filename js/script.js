@@ -77,7 +77,7 @@ day_2.addEventListener("click", ()=>{
 
 /* наведение на эллемент нав меню со стрелочкой, функция ОТКРЫВАЕТ 2 уровень нав меню, окрашивает цвет текста, окрашивает стрелку и переваречивает ее */
 nav_item_arr.addEventListener("mouseover", ()=>{
-    nav_img_arr.src = "icons/arrow-orange.png"
+    nav_img_arr.src = "../icons/arrow-orange.png"
     nav_img_arr.style.transform = "rotate(180deg) translateY(-0.2rem)"
     nav_item_arr_desc.classList.add("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
@@ -85,7 +85,7 @@ nav_item_arr.addEventListener("mouseover", ()=>{
 
 /* наведение на эллемент нав меню со стрелочкой, функция ЗАКРЫВАЕТ 2 уровень нав меню, окрашивает цвет текста, окрашивает стрелку и переваречивает ее */
 nav_item_arr.addEventListener("mouseout", ()=>{
-    nav_img_arr.src = "icons/arrow-black.png"
+    nav_img_arr.src = "../icons/arrow-black.png"
     nav_img_arr.style.transform = "rotate(0deg) translateY(0.2rem)"
     nav_item_arr_desc.classList.remove("color-orange")
     nav_levl_2.classList.toggle("navigation__levl-2_is-open")
@@ -103,12 +103,12 @@ nav_levl_2.addEventListener("mouseout", ()=>{
 
 /* открашивание иконки загрузки при наведении */
 btn.addEventListener("mouseover", ()=>{
-    btn_img.src = "icons/btn-img-white.png"
+    btn_img.src = "../icons/btn-img-white.png"
 })
 
 /* открашивание иконки загрузки при наведении */
 btn.addEventListener("mouseout", ()=>{
-    btn_img.src = "icons/btn-img-black.png"
+    btn_img.src = "../icons/btn-img-black.png"
 })
 
 /* наведение на эллементы нав меню 2 уровня */
@@ -125,19 +125,19 @@ for(let value of nav_items){
 
 /* изменение цвета стрелки при наведении во 2 и 3 секции */
 sub_title.addEventListener("mouseover", ()=>{
-    sub_title_img.src = "/icons/arr-left-orange.png"
+    sub_title_img.src = "../icons/arr-left-orange.png"
 })
 
 sub_title.addEventListener("mouseout", ()=>{
-    sub_title_img.src = "/icons/arr-left.png"
+    sub_title_img.src = "../icons/arr-left.png"
 })
 
 sub_title_2.addEventListener("mouseover", ()=>{
-    sub_title_img_2.src = "/icons/arr-left-orange.png"
+    sub_title_img_2.src = "../icons/arr-left-orange.png"
 })
 
 sub_title_2.addEventListener("mouseout", ()=>{
-    sub_title_img_2.src = "/icons/arr-left.png"
+    sub_title_img_2.src = "../icons/arr-left.png"
 })
 
 
