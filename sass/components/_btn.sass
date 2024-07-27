@@ -6,14 +6,16 @@
         font-size: 1.6rem
         font-weight: 400
         box-shadow: $box-shadow
-        position: absolute
-        right: -8rem
         border-radius: 9rem
         &:hover
             transform: scaleX(1.05) scaleY(1.05) 
             color: $color-white
         @include respond(phone)
             font-size: 2.4rem
+    &__reviews
+        &:link, &:visited
+            padding: 1rem 2rem
+            font-size: 2rem
     &_animated
         animation: RightToLeft
         animation-duration: 1.7s
@@ -24,6 +26,9 @@
         width: 1.7rem
         height: 1.7rem
         transform: translateY(.2rem)
+    &__nav
+        position: absolute
+        right: -14rem
 .btn-widget
     position: absolute
     right: -2.7rem
@@ -53,7 +58,18 @@
         transition: all .4s
 
 
-
+.btn-form
+    @include style-link($color-black)
+    border: none
+    padding: 1rem 2rem
+    background: $color-orange
+    font-size: 2rem
+    font-weight: 400
+    box-shadow: $box-shadow
+    border-radius: 9rem
+    &:hover
+        transform: scaleX(1.05) scaleY(1.05) 
+        color: $color-white
 
 .btn-desc
     @include style-link($color-black)

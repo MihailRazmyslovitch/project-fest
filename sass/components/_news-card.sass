@@ -1,7 +1,10 @@
 .news-card
-    height: 58rem
-    position: relative
-    box-shadow: $shadow-cards
+    width: 100%
+    height: 100%
+    &__div
+        position: relative
+        height: 58rem
+        box-shadow: $shadow-cards
     &__img
         width: 100%
         height: 50%
@@ -21,3 +24,13 @@
     &__title
         font-size: 2.2rem
         font-weight: 700
+    &-is-open
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: $color-white
+        z-index: 50
+    &__section
+        background: $color-white

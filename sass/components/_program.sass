@@ -1,0 +1,38 @@
+.program
+    position: relative
+    display: flex
+    justify-content: flex-start
+    align-items: top
+    &__days
+        top: 0
+        left: 0
+    &__date
+        position: relative
+        z-index: -1
+        left: 10rem
+        top: 0
+        &_number
+            font-size: 4rem
+            font-weight: 400
+            color: $color-black
+        &__number-div
+            display: flex
+            align-items: baseline
+    &__item-row
+        display: flex
+        align-items: flex-start
+        &:not(:last-child)
+            margin-bottom: 5rem
+    &__item-time
+        color: #8f8f8f
+        font-size: 3.5rem
+        height: min-content
+        line-height: 2.25rem
+        font-weight: 300
+        white-space: nowrap
+        margin-right: 6rem
+    &__item-desc
+        width: 65rem
+        font-size: 2rem
+        font-weight: 400
+        line-height: 1.6

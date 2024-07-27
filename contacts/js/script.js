@@ -19,7 +19,52 @@ const btn_widget = document.querySelector('.btn-widget'),
     galleryItem = document.querySelectorAll('.gallery__item')
     galleryItemHover = document.querySelectorAll('.gallery__item_is-hovered');
     arrHome = document.querySelector('.style-link__arrow_2');
-    home = document.querySelector('.navigation_mini-bottom');
+    home = document.querySelector('.navigation_mini-bottom'),
+    iconTelegram = document.querySelector('.footer__icon_tg');
+    iconWhatsap = document.querySelector('.footer__icon_wh');
+    iconMail = document.querySelector('.footer__icon_mail');
+    iconVk = document.querySelector('.footer__icon_vk');
+    contactsItems = document.querySelectorAll('.footer__item');
+
+/* наведение на иконки почты и вк */
+for(let value of contactsItems){
+    value.addEventListener("mouseover", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMail.src = "../icons/mail-orange.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVk.src = "../icons/vk-orange.png"
+        }else{
+        }
+    })
+    value.addEventListener("mouseout", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMail.src = "../icons/mail.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVk.src = "../icons/vk.png"
+        }else{
+        }
+    })
+}
+
+/* наведение на иконку телеграма */
+iconTelegram.addEventListener("mouseover", ()=>{
+    iconTelegram.src = "../icons/telegram-orange.png"
+})
+
+iconTelegram.addEventListener("mouseout", ()=>{
+    iconTelegram.src = "../icons/telegram.png"
+})
+
+/* наведение на иконку ватсапа */
+
+iconWhatsap.addEventListener("mouseover", ()=>{
+    iconWhatsap.src = "../icons/whatsapp-orange.png"
+})
+
+iconWhatsap.addEventListener("mouseout", ()=>{
+    iconWhatsap.src = "../icons/whatsapp.png"
+})
+
 
 
 /* наведение на кнопку "на главную" */

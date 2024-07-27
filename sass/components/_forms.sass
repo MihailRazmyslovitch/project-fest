@@ -1,0 +1,116 @@
+.form
+    position: fixed
+    z-index: 301
+    height: 60rem
+    width: 70rem
+    background: $color-white
+    border-radius: 2.5rem
+    max-width: 100%
+    display: flex
+    justify-content: center
+    align-items:  center
+    flex-direction: column
+    @include respond(phone)
+        padding: 2rem 0 0 0 
+        text-align: center
+    &__admin
+        position: block
+        height: 60rem
+        width: 70rem
+        background: $color-white
+        border-radius: 2.5rem
+        max-width: 100%
+        display: flex
+        justify-content: center
+        align-items:  center
+        flex-direction: column
+        &_program
+            height: auto
+            width: auto
+    &__group:not(:last-child)
+        margin-bottom: 2rem
+    &__lable
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 400
+        display: block
+        margin-top: 1rem 
+        margin-left: 1.5rem
+        transition: all .5s
+        transform: translateY(0)
+    &__input
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 400
+        color: $color-black
+        padding: 2rem 2rem 2rem 2rem
+        background: $color-white
+        border: none
+        border-bottom: .3rem solid transparent
+        border-radius: .5rem
+        width: 50rem
+        box-shadow: $box-shadow-form
+        &_big
+            box-sizing: border-box
+            height: 15rem
+        @include respond(tab-land)
+            width: 75%
+        @include respond(phone)
+            width: 60%
+        &:focus
+            outline: none
+            border: none
+            border-bottom: .3rem solid #66D763
+            box-shadow: $box-shadow
+        &:focus:invalid
+            border: none
+            border-bottom: .3rem solid #D76363
+    &__input:placeholder-shown + &__lable
+        opacity: 0
+        visibility: hidden 
+        transform: translateY(-1rem)
+    &__group-radio
+        width: 30% 
+        display: inline-block
+        &_2
+            width: 40% 
+            display: inline-block
+    &__input-radio
+        display: none
+    &__lable-radio
+        cursor: pointer
+        position: relative
+        padding-left: 4rem
+    &__desc
+        width: 50rem
+        color: $color-black
+        font-size: 1.8rem
+        font-weight: 400
+        &_red
+            color: red
+    &__cross
+        position: absolute
+        z-index: 400
+        width: 3rem
+        top: 3.5rem
+        right: 3.5rem
+        height: 3rem
+        span
+            display: block
+            height: 2px
+            width: 3rem
+            display: block
+            background: $color-black
+            &:first-child
+                transform: rotate(45deg) translateY(1rem) translateX(1rem)
+            &:last-child
+                transform: rotate(-45deg) translateY(0.9rem) translateX(-0.9rem)
+            
+
+
+
+.form-flex-center
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center

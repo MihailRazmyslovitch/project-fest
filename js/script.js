@@ -18,6 +18,50 @@ const btn_widget = document.querySelector('.btn-widget'),
     sub_title_img_2 = document.querySelector('.sub-title__img_2')
     galleryItem = document.querySelectorAll('.gallery__item')
     galleryItemHover = document.querySelectorAll('.gallery__item_is-hovered');
+    iconTelegram = document.querySelector('.footer__icon_tg');
+    iconWhatsap = document.querySelector('.footer__icon_wh');
+    iconMail = document.querySelector('.footer__icon_mail');
+    iconVk = document.querySelector('.footer__icon_vk');
+    contactsItems = document.querySelectorAll('.footer__item');
+
+/* наведение на иконки почты и вк */
+for(let value of contactsItems){
+    value.addEventListener("mouseover", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMail.src = "icons/mail-orange.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVk.src = "icons/vk-orange.png"
+        }else{
+        }
+    })
+    value.addEventListener("mouseout", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMail.src = "icons/mail.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVk.src = "icons/vk.png"
+        }else{
+        }
+    })
+}
+
+/* наведение на иконку телеграма */
+iconTelegram.addEventListener("mouseover", ()=>{
+    iconTelegram.src = "icons/telegram-orange.png"
+})
+
+iconTelegram.addEventListener("mouseout", ()=>{
+    iconTelegram.src = "icons/telegram.png"
+})
+
+/* наведение на иконку ватсапа */
+
+iconWhatsap.addEventListener("mouseover", ()=>{
+    iconWhatsap.src = "icons/whatsapp-orange.png"
+})
+
+iconWhatsap.addEventListener("mouseout", ()=>{
+    iconWhatsap.src = "icons/whatsapp.png"
+})
 
 /* кнопка открывания виджета */
 btn_widget.addEventListener("click", () => {
@@ -123,19 +167,19 @@ for(let value of nav_items){
 
 /* изменение цвета стрелки при наведении во 2 и 3 секции */
 sub_title.addEventListener("mouseover", ()=>{
-    sub_title_img.src = "/icons/arr-left-orange.png"
+    sub_title_img.src = "icons/arr-left-orange.png"
 })
 
 sub_title.addEventListener("mouseout", ()=>{
-    sub_title_img.src = "/icons/arr-left.png"
+    sub_title_img.src = "icons/arr-left.png"
 })
 
 sub_title_2.addEventListener("mouseover", ()=>{
-    sub_title_img_2.src = "/icons/arr-left-orange.png"
+    sub_title_img_2.src = "icons/arr-left-orange.png"
 })
 
 sub_title_2.addEventListener("mouseout", ()=>{
-    sub_title_img_2.src = "/icons/arr-left.png"
+    sub_title_img_2.src = "icons/arr-left.png"
 })
 
 
@@ -144,16 +188,27 @@ for(let value of galleryItem){
         value.addEventListener("mouseover", ()=>{
             if(value.classList.contains("gallery__item__hover") == false){
                 value.classList.add("gallery__item__hover")
-                value.innerHTML = '<img src="/img/img-1.jpeg" alt="" class="gallery__item-img"><div class="gallery__item_is-hovered"><h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4><a href="#" class="btn-card">Узнать больше &rarr;</a></div>'
+                value.innerHTML = '<img src="img/img-1.jpeg" alt="" class="gallery__item-img"><div class="gallery__item_is-hovered"><h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4><a href="#" class="btn-card">Узнать больше &rarr;</a></div>'
             }
         })
         value.addEventListener("mouseout", ()=>{
             if(value.classList.contains("gallery__item__hover") == true){
                 value.classList.remove("gallery__item__hover")
-                value.innerHTML = '<img src="/img/img-1.jpeg" alt="" class="gallery__item-img">'
+                value.innerHTML = '<img src="img/img-1.jpeg" alt="" class="gallery__item-img">'
             }
         })
     /* value.addEventListener("mouseout", ()=>{
         value.lastChild.classList.remove("display-none")
     }) */
 }
+
+
+
+
+
+
+
+
+
+
+
