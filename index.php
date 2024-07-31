@@ -144,9 +144,9 @@
                                     <div class="row position-relative"> 
                                             <div class="margin-top-160px position-absolute">
                                             <div class="navigation_mini margin-bottom-50px">
-                                                <a class="style-link margin-right-10px" href="../index.php">Главная</a>
+                                                <a class="style-link margin-right-10px" href="index.php">Главная</a>
                                                 <img class="style-link__arrow margin-right-10px" src="icons/arr-left.png" alt="">
-                                                <a class="style-link margin-right-10px" href="../news/news.php">Новости</a>
+                                                <a class="style-link margin-right-10px" href="news/news.php">Новости</a>
                                                 <img class="style-link__arrow margin-right-10px" src="icons/arr-left.png" alt="">
                                                 <a class="style-link margin-right-10px" href="#">Название новости</a>
                                             </div>
@@ -161,7 +161,7 @@
                                     <div><p class="history-section__desc margin-bottom-50px">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: перспективное планирование не оставляет шанса для прогресса профессионального сообщества. Кстати, действия представителей оппозиции ограничены исключительно образом мышления. Но новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствующей насущным потребностям. Наше дело не так однозначно, как может показаться: сплочённость команды профессионалов однозначно определяет каждого участника как способного принимать собственные решения касаемо благоприятных перспектив. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть объединены в целые кластеры себе подобных. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий требует анализа модели развития. Равным образом, сложившаяся структура организации не оставляет шанса для укрепления моральных ценностей. Идейные соображения высшего порядка, а также повышение уровня гражданского сознания позволяет оценить значение системы массового участия.</p>
                                         <div class="navigation_mini margin-bottom-50px">
                                             <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="icons/arr-left.png" alt="">
-                                            <a class="style-link navigation_mini-bottom" href="../index.php">на главную</a>
+                                            <a class="style-link navigation_mini-bottom" href="index.php">на главную</a>
                                         </div>
                                     </div>
                                     </div>
@@ -192,11 +192,13 @@
                                 </footer>
                             </div>
                             <div class="news-card__div">
-                            <div class="news-card__img"></div>
+                            <div class="news-card__div-img">
+                                <img class="news-card__img" src="img/card-img.jpeg" alt="">
+                            </div>
                             <div class="news-card__desc">
                                 <div class="margin-top-70px">
-                                    <p class="news-card__date margin-bottom-30px">12 июня 2024</p>
-                                    <h4 class="news-card__title margin-bottom-50px">Торжественное закрытие фестиваля «День России на Бирюзовой Катуни»</h4>
+                                    <p class="news-card__date margin-bottom-30px">Дата</p>
+                                    <h4 class="news-card__title margin-bottom-50px">Название</h4>
                                     <a href="#" id="1" class="btn-card">Узнать больше &rarr;</a>
                                 </div>
                             </div>
@@ -210,7 +212,7 @@
                 </div>
     </section>
     <!-- section 3 -->
-    <section class="section-third ">
+    <section class="section-third section-third-index">
         <div class="row position-relative">
             <p class="title margin-bottom-50px">Галерея</p>
             <a href="gallery/gallery.php" class="sub-title section-second__sub-title sub-title_2">
@@ -220,42 +222,42 @@
             <div class="gallery">
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
@@ -264,31 +266,31 @@
         </div>
     </section>
     <!-- section 4 -->
-    <section class="section-fourth">
+    <section class="section-fourth section-fourth-index">
         <div class="row">
             <p class="title margin-bottom-50px">Как добраться</p>
             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/derevnya_borki/53139659/?ll=30.246916%2C56.081929&utm_medium=mapframe&utm_source=maps&z=15.43" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Борки — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.246916%2C56.081929&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEzOTY1ORKYAdCg0L7RgdGB0LjRjywg0J_RgdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQktC10LvQuNC60L7Qu9GD0LrRgdC60LjQuSDRgNCw0LnQvtC9LCDQn9C-0YDQtdGH0LXQvdGB0LrQsNGPINCy0L7Qu9C-0YHRgtGMLCDQtNC10YDQtdCy0L3RjyDQkdC-0YDQutC4IgoNMv3xQRUTUmBC&z=15.43" width="1140" height="630" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer footer-index">
         <div class="row footer__line"></div>
         <div class="row footer__row">
             <div class="contacts__items margin-bottom-50px">
                 <div class="footer__item">
                     <a href="tel:89113714786" class="footer__link footer-paragraph margin-right-10px">Светлана Размыслович +7-911-371-47-86</a>
                     <div class="footer__icons">
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg" src="icons/telegram.png" alt=""></a>
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh" src="icons/whatsapp.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg_index" src="icons/telegram.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh_index" src="icons/whatsapp.png" alt=""></a>
                     </div>
                 </div>
                 <a href="#" class="footer-paragraph footer__item footer__link footer-site">светслова.рф</a>
-                <a href="#" class="footer__item footer__item__mail footer__item_right footer__link">
-                    <img class="margin-right-10px footer__icon footer__icon_mail" src="icons/mail.png" alt="">
+                <a href="#" class="footer__item footer__item_index footer__item__mail footer__item_right footer__link">
+                    <img class="margin-right-10px footer__icon footer__icon_mail_index" src="icons/mail.png" alt="">
                     <p class="footer-paragraph">lukidebut@mail.ru</p>
                 </a>
-                <a href="#" class="footer__item footer__item__vk footer__link margin-bottom-60px-imp">
-                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk" src="icons/vk.png" alt="">
+                <a href="#" class="footer__item footer__item_index footer__item__vk footer__link margin-bottom-60px-imp">
+                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk_index" src="icons/vk.png" alt="">
                     <p class="footer-paragraph ">s.razmyslovich</p>
                 </a>
             </div>
@@ -296,7 +298,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/card.js"></script>
+    <script src="js/news_card.js"></script>
 </body>
 </html>
 

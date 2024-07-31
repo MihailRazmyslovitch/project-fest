@@ -23,6 +23,23 @@ const btn_widget = document.querySelector('.btn-widget'),
     iconMail = document.querySelector('.footer__icon_mail');
     iconVk = document.querySelector('.footer__icon_vk');
     contactsItems = document.querySelectorAll('.footer__item');
+    iconTelegramIndex = document.querySelector('.footer__icon_tg_index');
+    iconWhatsapIndex = document.querySelector('.footer__icon_wh_index');
+    iconMailIndex = document.querySelector('.footer__icon_mail_index');
+    iconVkIndex = document.querySelector('.footer__icon_vk_index');
+    contactsItemsIndex = document.querySelectorAll('.footer__item_index');
+    arrHome = document.querySelector('.style-link__arrow_2');
+    home = document.querySelector('.navigation_mini-bottom');
+
+
+    /* наведение на кнопку "на главную" */
+home.addEventListener("mouseover", ()=>{
+    arrHome.src = "icons/arr-left-orange.png"
+})
+
+home.addEventListener("mouseout", ()=>{
+    arrHome.src = "icons/arr-left.png"
+})
 
 /* наведение на иконки почты и вк */
 for(let value of contactsItems){
@@ -44,6 +61,25 @@ for(let value of contactsItems){
     })
 }
 
+for(let value of contactsItemsIndex){
+    value.addEventListener("mouseover", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMailIndex.src = "icons/mail-orange.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVkIndex.src = "icons/vk-orange.png"
+        }else{
+        }
+    })
+    value.addEventListener("mouseout", ()=>{
+        if(value.classList.contains("footer__item__mail") == true){
+            iconMailIndex.src = "icons/mail.png"
+        } else if(value.classList.contains("footer__item__vk") == true){
+            iconVkIndex.src = "icons/vk.png"
+        }else{
+        }
+    })
+}
+
 /* наведение на иконку телеграма */
 iconTelegram.addEventListener("mouseover", ()=>{
     iconTelegram.src = "icons/telegram-orange.png"
@@ -53,14 +89,30 @@ iconTelegram.addEventListener("mouseout", ()=>{
     iconTelegram.src = "icons/telegram.png"
 })
 
+iconTelegramIndex.addEventListener("mouseover", ()=>{
+    iconTelegramIndex.src = "icons/telegram-orange.png"
+})
+
+iconTelegramIndex.addEventListener("mouseout", ()=>{
+    iconTelegramIndex.src = "icons/telegram.png"
+})
+
 /* наведение на иконку ватсапа */
 
 iconWhatsap.addEventListener("mouseover", ()=>{
     iconWhatsap.src = "icons/whatsapp-orange.png"
 })
 
+iconWhatsapIndex.addEventListener("mouseover", ()=>{
+    iconWhatsapIndex.src = "icons/whatsapp-orange.png"
+})
+
 iconWhatsap.addEventListener("mouseout", ()=>{
     iconWhatsap.src = "icons/whatsapp.png"
+})
+
+iconWhatsapIndex.addEventListener("mouseout", ()=>{
+    iconWhatsapIndex.src = "icons/whatsapp.png"
 })
 
 /* кнопка открывания виджета */
@@ -184,7 +236,7 @@ sub_title_2.addEventListener("mouseout", ()=>{
 
 
 /* при наведении картинка галлереи блюрится */
-for(let value of galleryItem){
+/* for(let value of galleryItem){
         value.addEventListener("mouseover", ()=>{
             if(value.classList.contains("gallery__item__hover") == false){
                 value.classList.add("gallery__item__hover")
@@ -197,10 +249,10 @@ for(let value of galleryItem){
                 value.innerHTML = '<img src="img/img-1.jpeg" alt="" class="gallery__item-img">'
             }
         })
-    /* value.addEventListener("mouseout", ()=>{
+     value.addEventListener("mouseout", ()=>{
         value.lastChild.classList.remove("display-none")
-    }) */
-}
+    })
+} */
 
 
 

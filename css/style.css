@@ -718,6 +718,25 @@ body {
   transform: translateY(0rem);
 }
 
+.btn_delete {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  width: 17rem;
+  height: 4rem;
+  background: rgb(255, 0, 0);
+  font-size: 1.8rem;
+  font-weight: 400;
+  box-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.1);
+  border-radius: 9rem;
+  border: none;
+}
+.btn_delete:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  color: #fff;
+}
+
 .widget {
   position: absolute;
   top: 0;
@@ -804,10 +823,14 @@ body {
   height: 58rem;
   box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.3);
 }
+.news-card__div-img {
+  width: 100%;
+  height: 40%;
+  background: #C0BEBE;
+}
 .news-card__img {
   width: 100%;
-  height: 50%;
-  background: #C0BEBE;
+  height: 100%;
 }
 .news-card__desc {
   position: absolute;
@@ -815,7 +838,7 @@ body {
   width: 100%;
   height: 65%;
   background: #fff;
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
   padding: 1.5rem 2.4rem 0 2.4rem;
 }
 .news-card__date {
@@ -875,10 +898,14 @@ body {
   left: 0;
   z-index: 2;
   backdrop-filter: blur(0.3rem);
+  opacity: 0;
 }
 .gallery__item_is-hovered_s {
   width: 93%;
   left: 1.3rem;
+}
+.gallery__item_is-hovered:hover {
+  opacity: 1;
 }
 .gallery__big-card {
   flex: 0 0 50%;
@@ -1058,6 +1085,11 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.addfile {
+  height: 2rem;
+  width: 2rem;
 }
 
 .program {

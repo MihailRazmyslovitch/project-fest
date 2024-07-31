@@ -10,6 +10,10 @@ if(isset($_POST['action']) && $_POST['action'] == 'delete') // есть action �
     $res = mysqli_query($link, $sql);
     $sql = "DELETE FROM `program_day_2`";
     $res = mysqli_query($link, $sql);
+    $sql = "DELETE FROM `program_day_1_widget`"; // по одной инструкции удаления на каждую таблицу
+    $res = mysqli_query($link, $sql);
+    $sql = "DELETE FROM `program_day_2_widget`";
+    $res = mysqli_query($link, $sql);
     mysqli_close($link);
     header('location: program-admin.php');
 }
@@ -234,7 +238,11 @@ header('location: program-admin.php');
           <button type="submit" class="btn_animated btn-form margin-bottom-20px">ОТПРАВИТЬ</button>
         </div>
       </form>
-      <button type="action" name="action" id="action" class="btn_animated btn-form">ОЧИСТИТЬ БАЗУ ДАННЫХ</button>
+      <form action="program-admin.php" method="POST" id="form-admin" class="form__admin form__admin_program">
+        <div class="form__groop">
+            <button type="hidden" name="action" id="action" value="delete" class="btn_animated btn_delete">Удалить все</button>
+        </div>
+      </form>
       </div>
       <div class="navigation_mini margin-bottom-50px">
                     <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="../icons/arr-left.png" alt="">
