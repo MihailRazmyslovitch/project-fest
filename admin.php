@@ -31,7 +31,7 @@
         if (isset($_POST['login']) && isset($_POST['password'])):
           $login = strip_tags(trim($_POST['login']));
           $password = strip_tags(trim($_POST['password']));
-          $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+          $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
           $info = [];
           if($query = $db->query("SELECT `login`, `password` FROM `admin`")){
               $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);

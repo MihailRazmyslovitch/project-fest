@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "1234";
+$password = "root";
 $database = "BorkiFestival_site";
 
 if (isset($_POST['name']) && isset($_POST['description_2']) && isset($_POST['card_img']) && isset($_POST['img']) && isset($_POST['description'])){

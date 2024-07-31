@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "1234";
+$password = "root";
 $database = "BorkiFestival_site";
 if(isset($_POST['action']) && $_POST['action'] == 'delete') // есть action и он равен delete
 {
@@ -135,7 +135,7 @@ header('location: program-admin.php');
                 <div class="program__date">
                     <div class="program__date__date-1">
                         <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             $info_date = [];
                             if($query = $db->query("SELECT * FROM `program_day_1`")){
@@ -164,7 +164,7 @@ header('location: program-admin.php');
                     </div>
                     <div class="program__date__date-2 display-none">
                         <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             $info_date = [];
                             if($query = $db->query("SELECT * FROM `program_day_2`")){

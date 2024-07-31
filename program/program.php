@@ -95,7 +95,7 @@
                 <div class="program__date">
                     <div class="program__date__date-1">
                         <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             $info_date = [];
                             if($query = $db->query("SELECT * FROM `program_day_1`")){

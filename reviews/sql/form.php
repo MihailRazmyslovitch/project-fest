@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "1234";
+$password = "root";
 $database = "BorkiFestival_site";
 $dbtable = "reviews";
 

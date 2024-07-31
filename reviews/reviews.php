@@ -1,5 +1,5 @@
 <?php
-    $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+    $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
     $info = [];
     if($query = $db->query("SELECT * FROM `reviews` ORDER BY `id` DESC")){
         $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);
