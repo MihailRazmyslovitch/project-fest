@@ -45,7 +45,7 @@
                                     <a href="../festival-position/festival-position.html" class="navigation__link__levl-2 navigation__link">положение</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
-                                    <a href="../program/program.html" class="navigation__link__levl-2 navigation__link">программа</a>
+                                    <a href="../program/program.php" class="navigation__link__levl-2 navigation__link">программа</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
                                     <a href="../reviews/reviews.php" class="navigation__link__levl-2 navigation__link">отзывы</a>

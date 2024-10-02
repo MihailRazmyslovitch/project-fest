@@ -118,7 +118,7 @@ header('location: program-admin.php');
                         <div class="navigation_mini margin-bottom-50px">
                             <a class="style-link margin-right-10px" href="../index.php">Главная</a>
                             <img class="style-link__arrow margin-right-10px" src="../icons/arr-left.png" alt="">
-                            <a class="style-link margin-right-10px" href="../history/history.html">Панель администрирования</a>
+                            <a class="style-link margin-right-10px" href="../admin/program-admin.php">Панель администрирования</a>
                         </div>
                         <h2 class="title margin-bottom-80px">Добро пожаловать на страницу администрирования программы фестиваля!</h2>
                     </div>

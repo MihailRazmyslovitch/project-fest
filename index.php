@@ -81,7 +81,7 @@
                 </div>
                 <div class="widget__date">
                 <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             if($query = $db->query("SELECT * FROM `program_day_1_widget` ORDER BY id DESC LIMIT 1")){
                                 $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);
@@ -101,7 +101,7 @@
                                 </div>
                             <?php endforeach; ?>
                             <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             if($query = $db->query("SELECT * FROM `program_day_2_widget` ORDER BY id DESC LIMIT 1")){
                                 $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);
@@ -139,7 +139,7 @@
                     <div class="col-1-of-3">
                         <div class="news-card">
                         <div id="1" class="news-card-is-open display-none">
-                        <section class="news-card__section">
+                        <div class="news-card__section">
                                 <div class="history-section__background">
                                     <div class="row position-relative"> 
                                             <div class="margin-top-160px position-absolute">
@@ -165,7 +165,7 @@
                                         </div>
                                     </div>
                                     </div>
-                        </section>
+                        </div>
                                 <footer class="footer">
                                     <div class="row footer__line"></div>
                                     <div class="row footer__row">

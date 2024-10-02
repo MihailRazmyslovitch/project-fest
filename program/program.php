@@ -45,7 +45,7 @@
                                     <a href="../festival-position/festival-position.html" class="navigation__link__levl-2 navigation__link">положение</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
-                                    <a href="../program/program.html" class="navigation__link__levl-2 navigation__link">программа</a>
+                                    <a href="../program/program.php" class="navigation__link__levl-2 navigation__link">программа</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
                                     <a href="../reviews/reviews.php" class="navigation__link__levl-2 navigation__link">отзывы</a>
@@ -71,7 +71,7 @@
             </div>
         </nav>
         <!-- section first -->
-    <section class="visitors-section">
+    <section class="program-section">
         <div class="visitors-section__background margin-bottom-100px">
             <div class="row position-relative"> 
                     <div class="margin-top-160px position-absolute">
@@ -124,7 +124,7 @@
                     </div>
                     <div class="program__date__date-2 display-none">
                         <?php
-                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "1234");
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
                             $info = [];
                             $info_date = [];
                             if($query = $db->query("SELECT * FROM `program_day_2`")){

@@ -53,6 +53,7 @@
         &_big
             box-sizing: border-box
             height: 15rem
+            resize: none
         @include respond(tab-land)
             width: 75%
         @include respond(phone)
@@ -88,6 +89,8 @@
         font-weight: 400
         &_red
             color: red
+            font-size: 2rem
+            font-weight: 500
     &__cross
         position: absolute
         z-index: 400
@@ -95,6 +98,7 @@
         top: 3.5rem
         right: 3.5rem
         height: 3rem
+        cursor: pointer
         span
             display: block
             height: 2px

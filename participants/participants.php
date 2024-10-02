@@ -45,7 +45,7 @@
                                     <a href="../festival-position/festival-position.html" class="navigation__link__levl-2 navigation__link">положение</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
-                                    <a href="../program/program.html" class="navigation__link__levl-2 navigation__link">программа</a>
+                                    <a href="../program/program.php" class="navigation__link__levl-2 navigation__link">программа</a>
                                 </li>
                                 <li class="navigation__item navigation__item_levl-2">
                                     <a href="../reviews/reviews.php" class="navigation__link__levl-2 navigation__link">отзывы</a>
@@ -82,96 +82,60 @@
             </div>
         </div>
         <div class="row">
-        <div class="gallery_site">
-                <div class="gallery__item gallery__item_s gallery__big-card margin-bottom-20px">
+        <div class="gallery gallery_site">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s gallery__big-card margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
+                <div class="gallery__item">
                     <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
+                    <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>
                     </div>
                 </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
-                    <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
-                        <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
-                        <a href="#" class="btn-card">Узнать больше &rarr;</a>
-                    </div>
-                </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
-                    <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
-                        <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
-                        <a href="#" class="btn-card">Узнать больше &rarr;</a>
-                    </div>
-                </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
-                    <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
-                        <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
-                        <a href="#" class="btn-card">Узнать больше &rarr;</a>
-                    </div>
-                </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
-                    <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
-                        <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
-                        <a href="#" class="btn-card">Узнать больше &rarr;</a>
-                    </div>
-                </div>
-                <div class="gallery__item gallery__item_s margin-bottom-20px">
-                    <img src="../img/img-1.jpeg" alt="" class="gallery__item-img">
-                    <div class="gallery__item_is-hovered display-none">
-                        <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
-                        <a href="#" class="btn-card">Узнать больше &rarr;</a>
-                    </div>
-                </div>
-        </div>
-        <div class="navigation_mini margin-bottom-50px">
-            <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="../icons/arr-left.png" alt="">
-            <a class="style-link navigation_mini-bottom" href="../index.php">на главную</a>
-        </div>
+            </div>
+            <div class="navigation_mini margin-bottom-50px margin-top-100px">
+                <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="../icons/arr-left.png" alt="">
+                <a class="style-link navigation_mini-bottom" href="../index.php">на главную</a>
             </div>
         </div>
     </section>

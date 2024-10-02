@@ -75,16 +75,14 @@ home.addEventListener("mouseout", ()=>{
 
 
 
-/* наведение на эллементы нав меню 2 уровня */
+/* наведение на эллементы нав меню */
 for(let value of nav_items){
-    if(value.classList.contains("navigation__item_levl-2") == false){
     value.addEventListener("mouseover", ()=>{
         value.classList.add("navigation__link_is-hovered")
     })
     value.addEventListener("mouseout", ()=>{
         value.classList.remove("navigation__link_is-hovered")
     })
-}
 }
 
 /* наведение на програму фестиваля день 1 */
