@@ -4,61 +4,98 @@ $user = "root";
 $password = "root";
 $database = "BorkiFestival_site";
 
-if (isset($_POST['name']) && isset($_POST['description_2']) && isset($_POST['description']) && isset($_POST['card-img']) && isset($_POST['img'])){
-    $arr = [
-        'января',
-        'февраля',
-        'марта',
-        'апреля',
-        'мая',
-        'июня',
-        'июля',
-        'августа',
-        'сентября',
-        'октября',
-        'ноября',
-        'декабря'
-        ];
-        $month = date('n')-1;
-    
-        $date = date("d $arr[$month] Y");
-    
-    $link = mysqli_connect($host, $user, $password, $database);
-    
-    $dbtable = 'news_cards';
-
+if (isset($_POST['name']) && isset($_POST['description_2']) && isset($_POST['description'])){
 //переменные с формы
 $title = strip_tags(trim($_POST['name']));
 $description = strip_tags(trim($_POST['description']));
 $description_2 = strip_tags(trim($_POST['description_2']));
 
 
-if (!empty($_FILES['img']['tmp_name'])){
-    $img = addcslashes(file_get_contents($_FILES['img']['tmp_name']));
-    $sql = "INSERT INTO ".$dbtable." (name, description, description_2, date, card_img, img) VALUES ('$title', '$description', '$description_2', '$date', '$img', '$card_img')";
-};
+$uploaddir = '../uploads';
+$uploadfile = "$uploaddir/". basename($_FILES['card_img']['name']);
 
-/* foreach ($_FILES["card_img"]["error"] as $key => $error) {
+echo '<pre>';
+if (move_uploaded_file($_FILES['card_img']['tmp_name'], $uploadfile)) {
+    echo "Файл не содержит ошибок и успешно загрузился на сервер.\n";
+} else {
+    echo "Возможная атака на сервер через загрузку файла!\n";
+}
+
+echo 'Дополнительная отладочная информация:';
+print_r($_FILES);
+
+print "</pre>";
+
+$card_img = $_FILES["card_img"]["name"];
+
+
+
+
+$uploaddir = '../uploads';
+$uploadfile = "$uploaddir/". basename($_FILES['img']['name']);
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
+    echo "Файл не содержит ошибок и успешно загрузился на сервер.\n";
+} else {
+    echo "Возможная атака на сервер через загрузку файла!\n";
+}
+
+echo 'Дополнительная отладочная информация:';
+print_r($_FILES);
+
+print "</pre>";
+
+$img = $_FILES["img"]["name"];
+
+
+
+/* $uploads_dir = '../uploads';
+foreach ($_FILES["card_img"]["error"] as $key => $error) {
     if ($error == UPLOAD_ERR_OK) {
         $tmp_name = $_FILES["card_img"]["tmp_name"][$key];
-
-        // Функция basename() помогает защититься от атак на файловую систему;
-        // иногда требуется дополнительная проверка или очистка имени файла
-        $card_img = basename($_FILES["card_img"]["name"][$key]);
-        move_uploaded_file($tmp_name, "data/$card_img");
+        // basename() может предотвратить атаку на файловую систему;
+        // может быть целесообразным дополнительно проверить имя файла
+        $name = basename($_FILES["card_img"]["name"][$key]);
+        move_uploaded_file($tmp_name, "$uploads_dir/$name");
     }
 }
+$card_img = $_FILES["card_img"]["name"];
 
 foreach ($_FILES["img"]["error"] as $key => $error) {
     if ($error == UPLOAD_ERR_OK) {
         $tmp_name = $_FILES["img"]["tmp_name"][$key];
-
-        // Функция basename() помогает защититься от атак на файловую систему;
-        // иногда требуется дополнительная проверка или очистка имени файла
-        $img = basename($_FILES["img"]["name"][$key]);
-        move_uploaded_file($tmp_name, "data/$img");
+        // basename() может предотвратить атаку на файловую систему;
+        // может быть целесообразным дополнительно проверить имя файла
+        $name = basename($_FILES["img"]["name"][$key]);
+        move_uploaded_file($tmp_name, "$uploads_dir/$name");
     }
-} */
+}
+$img = $_FILES["img"]["name"];
+ */
+$arr = [
+    'января',
+    'февраля',
+    'марта',
+    'апреля',
+    'мая',
+    'июня',
+    'июля',
+    'августа',
+    'сентября',
+    'октября',
+    'ноября',
+    'декабря'
+    ];
+    $month = date('n')-1;
+
+    $date = date("d $arr[$month] Y");
+
+$link = mysqli_connect($host, $user, $password, $database);
+
+$dbtable = 'news_cards';
+
+$sql = "INSERT INTO ".$dbtable." (name, description, description_2, date, card_img, img) VALUES ('$title', '$description', '$description_2', '$date', '$card_img', '$img')";
 
 //внесём данные с формы в БД
 $res = mysqli_query($link, $sql);
@@ -194,7 +231,7 @@ header('location: news-admin.php');
                             </div>
                             <div class="news-card__div">
                             <div class="news-card__div-img">
-                                <img class="news-card__img" src="../img/<?php echo $data['img']?>" alt="">
+                                <img class="news-card__img" src="../uploads/<?php echo $data['img']?>" alt="">
                             </div>
                             <div class="news-card__desc">
                                 <div class="margin-top-70px">
