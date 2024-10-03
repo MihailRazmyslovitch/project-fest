@@ -231,7 +231,7 @@ header('location: news-admin.php');
                             </div>
                             <div class="news-card__div">
                             <div class="news-card__div-img">
-                                <img class="news-card__img" src="../uploads/<?php echo $data['img']?>" alt="">
+                                <img class="news-card__img" src="../uploads/<?php echo $data['card-img']?>" alt="">
                             </div>
                             <div class="news-card__desc">
                                 <div class="margin-top-70px">
