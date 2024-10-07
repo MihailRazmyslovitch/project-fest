@@ -82,20 +82,40 @@
             </div>
         </div>
         <div class="row">
-            <div class="news-row">
-
-
-
-
-
-
+            <?php
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
+                            $info = [];
+                            if($query = $db->query("SELECT * FROM `news_cards` ORDER BY id DESC")){
+                                $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);
+                            }else{
+                                print_r($db->ErrorInfo());
+                            }
+                            foreach($info as $data):?>
+                            <div class="col-1-of-3">
+                        <div class="news-card">
+                            <div class="news-card__div">
+                            <div class="news-card__div-img">
+                                <img class="news-card__img" src="../uploads/<?php echo $data['card_img']?>" alt="">
+                            </div>
+                            <div class="news-card__desc">
+                                <div class="margin-top-70px">
+                                    <p class="news-card__date margin-bottom-30px"><?php echo $data['date']?></p>
+                                    <h4 class="news-card__title margin-bottom-50px"><?php echo $data['name']?></h4>
+                                    <a href="../news/<?php echo $data['name_src']?>.php" id="<?php echo $data['id']?>" class="btn-card">Узнать больше &rarr;</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="row">
                     <div class="navigation_mini margin-bottom-50px margin-top-50px">
                         <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="../icons/arr-left.png" alt="">
                         <a class="style-link navigation_mini-bottom" href="../index.php">на главную</a>
                     </div>
+                </div>
             </div>
-        </div>
     </section>
     <footer class="footer">
         <div class="row footer__line"></div>

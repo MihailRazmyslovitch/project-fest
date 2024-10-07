@@ -135,80 +135,33 @@
                 <img class="sub-title__img" src="icons/arr-left.png" alt="">
             </a>
         </div>
-                <div class="row">
-                    <div class="col-1-of-3">
+        <div class="row">
+            <?php
+                            $db = new PDO(dsn:"mysql:host=localhost;dbname=BorkiFestival_site", username:"root", password: "root");
+                            $info = [];
+                            if($query = $db->query("SELECT * FROM `news_cards` ORDER BY id DESC LIMIT 3")){
+                                $info = $query->fetchAll(fetch_style: PDO::FETCH_ASSOC);
+                            }else{
+                                print_r($db->ErrorInfo());
+                            }
+                            foreach($info as $data):?>
+                            <div class="col-1-of-3">
                         <div class="news-card">
-                        <div id="1" class="news-card-is-open display-none">
-                        <div class="news-card__section">
-                                <div class="history-section__background">
-                                    <div class="row position-relative"> 
-                                            <div class="margin-top-160px position-absolute">
-                                            <div class="navigation_mini margin-bottom-50px">
-                                                <a class="style-link margin-right-10px" href="index.php">Главная</a>
-                                                <img class="style-link__arrow margin-right-10px" src="icons/arr-left.png" alt="">
-                                                <a class="style-link margin-right-10px" href="news/news.php">Новости</a>
-                                                <img class="style-link__arrow margin-right-10px" src="icons/arr-left.png" alt="">
-                                                <a class="style-link margin-right-10px" href="#">Название новости</a>
-                                            </div>
-                                            <h2 class="title margin-bottom-80px">Название новости</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row background-white">
-                                        <p class="footer-paragraph margin-bottom-25px margin-top-100px">Уважаемые гости!</p>
-                                        <p class="history-section__desc margin-bottom-100px">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: перспективное планирование не оставляет шанса для прогресса профессионального сообщества. Кстати, действия представителей оппозиции ограничены исключительно образом мышления. Но новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствующей насущным потребностям. Наше дело не так однозначно, как может показаться: сплочённость команды профессионалов однозначно определяет каждого участника как способного принимать собственные решения касаемо благоприятных перспектив. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть объединены в целые кластеры себе подобных. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий требует анализа модели развития. Равным образом, сложившаяся структура организации не оставляет шанса для укрепления моральных ценностей. Идейные соображения высшего порядка, а также повышение уровня гражданского сознания позволяет оценить значение системы массового участия.</p>
-                                        <div class="history-section__img margin-bottom-100px"></div>
-                                    <div><p class="history-section__desc margin-bottom-50px">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: перспективное планирование не оставляет шанса для прогресса профессионального сообщества. Кстати, действия представителей оппозиции ограничены исключительно образом мышления. Но новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствующей насущным потребностям. Наше дело не так однозначно, как может показаться: сплочённость команды профессионалов однозначно определяет каждого участника как способного принимать собственные решения касаемо благоприятных перспектив. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть объединены в целые кластеры себе подобных. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий требует анализа модели развития. Равным образом, сложившаяся структура организации не оставляет шанса для укрепления моральных ценностей. Идейные соображения высшего порядка, а также повышение уровня гражданского сознания позволяет оценить значение системы массового участия.</p>
-                                        <div class="navigation_mini margin-bottom-50px">
-                                            <img class="style-link__arrow style-link__arrow_2 margin-right-10px" src="icons/arr-left.png" alt="">
-                                            <a class="style-link navigation_mini-bottom" href="index.php">на главную</a>
-                                        </div>
-                                    </div>
-                                    </div>
-                        </div>
-                                <footer class="footer">
-                                    <div class="row footer__line"></div>
-                                    <div class="row footer__row">
-                                        <div class="contacts__items margin-bottom-50px">
-                                            <div class="footer__item">
-                                                <a href="tel:89113714786" class="footer__link footer-paragraph margin-right-10px">Светлана Размыслович +7-911-371-47-86</a>
-                                                <div class="footer__icons">
-                                                    <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg" src="icons/telegram.png" alt=""></a>
-                                                    <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh" src="icons/whatsapp.png" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="footer-paragraph footer__item footer__link footer-site">светслова.рф</a>
-                                            <a href="#" class="footer__item footer__item__mail footer__item_right footer__link">
-                                                <img class="margin-right-10px footer__icon footer__icon_mail" src="icons/mail.png" alt="">
-                                                <p class="footer-paragraph">lukidebut@mail.ru</p>
-                                            </a>
-                                            <a href="#" class="footer__item footer__item__vk footer__link margin-bottom-60px-imp">
-                                                <img class="margin-right-10px footer__icon footer__icon footer__icon_vk" src="icons/vk.png" alt="">
-                                                <p class="footer-paragraph ">s.razmyslovich</p>
-                                            </a>
-                                        </div>
-                                        <p class="footer__item footer__name">© 1984-2024 "А музы не молчат"</p>
-                                    </div>
-                                </footer>
-                            </div>
                             <div class="news-card__div">
                             <div class="news-card__div-img">
-                                <img class="news-card__img" src="img/card-img.jpeg" alt="">
+                                <img class="news-card__img" src="uploads/<?php echo $data['card_img']?>" alt="">
                             </div>
                             <div class="news-card__desc">
                                 <div class="margin-top-70px">
-                                    <p class="news-card__date margin-bottom-30px">Дата</p>
-                                    <h4 class="news-card__title margin-bottom-50px">Название</h4>
-                                    <a href="#" id="1" class="btn-card">Узнать больше &rarr;</a>
+                                    <p class="news-card__date margin-bottom-30px"><?php echo $data['date']?></p>
+                                    <h4 class="news-card__title margin-bottom-50px"><?php echo $data['name']?></h4>
+                                    <a href="news/<?php echo $data['name_src']?>.php" id="<?php echo $data['id']?>" class="btn-card">Узнать больше &rarr;</a>
                                 </div>
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-1-of-3">
-                    </div>
-                    <div class="col-1-of-3">
-                    </div>
+                    <?php endforeach; ?>
                 </div>
     </section>
     <!-- section 3 -->
@@ -273,24 +226,24 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer footer-index">
+    <footer class="footer">
         <div class="row footer__line"></div>
         <div class="row footer__row">
             <div class="contacts__items margin-bottom-50px">
                 <div class="footer__item">
                     <a href="tel:89113714786" class="footer__link footer-paragraph margin-right-10px">Светлана Размыслович +7-911-371-47-86</a>
                     <div class="footer__icons">
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg_index" src="icons/telegram.png" alt=""></a>
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh_index" src="icons/whatsapp.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg" src="icons/telegram.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh" src="icons/whatsapp.png" alt=""></a>
                     </div>
                 </div>
                 <a href="#" class="footer-paragraph footer__item footer__link footer-site">светслова.рф</a>
-                <a href="#" class="footer__item footer__item_index footer__item__mail footer__item_right footer__link">
-                    <img class="margin-right-10px footer__icon footer__icon_mail_index" src="icons/mail.png" alt="">
+                <a href="#" class="footer__item footer__item__mail footer__item_right footer__link">
+                    <img class="margin-right-10px footer__icon footer__icon_mail" src="icons/mail.png" alt="">
                     <p class="footer-paragraph">lukidebut@mail.ru</p>
                 </a>
-                <a href="#" class="footer__item footer__item_index footer__item__vk footer__link margin-bottom-60px-imp">
-                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk_index" src="icons/vk.png" alt="">
+                <a href="#" class="footer__item footer__item__vk footer__link margin-bottom-60px-imp">
+                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk" src="icons/vk.png" alt="">
                     <p class="footer-paragraph ">s.razmyslovich</p>
                 </a>
             </div>
