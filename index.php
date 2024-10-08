@@ -174,7 +174,7 @@
             </a>
             <div class="gallery">
                 <div class="gallery__item">
-                    <img src="img/img-1.jpeg" alt="" class="gallery__item-img">
+                    <img src="img/img-2.jpeg" alt="" class="gallery__item-img">
                     <div class="gallery__item_is-hovered">
                         <h4 class="news-card__title margin-bottom-100px">Первые фестивальные кадры 2024 г.</h4>
                         <a href="#" class="btn-card">Узнать больше &rarr;</a>

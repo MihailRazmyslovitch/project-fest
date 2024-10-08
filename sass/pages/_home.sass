@@ -37,10 +37,6 @@
             color: black
         &:hover
             color: $color-orange
-    &-site 
-        position: absolute
-        right: 0
-        top: 0
     &__name 
         font-size: 3rem
         font-weight: 400
@@ -51,9 +47,6 @@
         height: fit-content
         &:last-child
             margin-bottom: 0
-        &_right
-            position: absolute
-            right: 0
     &__icon
         height: 3.7rem
         width: 3.7rem
@@ -61,6 +54,10 @@
 .contacts
     &__items
         position: relative
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        flex-wrap: wrap
 
 .visitors-section
     &__background

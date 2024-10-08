@@ -265,6 +265,9 @@ header('location: news-admin.php');
                 </div>
                 <ul class="navigation">
                     <li class="navigation__item margin-right-20px">
+                        <a class="navigation__link" href="../admin/admin-input-true.html">главная</a>
+                    </li>
+                    <li class="navigation__item margin-right-20px">
                         <a class="navigation__link" href="../admin/news-admin.php">новости</a>
                     </li>
                     <li class="navigation__item margin-right-20px">
@@ -357,31 +360,30 @@ header('location: news-admin.php');
                 </div>
                 </section>
     <!-- footer -->
-    <footer class="footer footer-index">
+    <footer class="footer">
         <div class="row footer__line"></div>
         <div class="row footer__row">
             <div class="contacts__items margin-bottom-50px">
                 <div class="footer__item">
                     <a href="tel:89113714786" class="footer__link footer-paragraph margin-right-10px">Светлана Размыслович +7-911-371-47-86</a>
                     <div class="footer__icons">
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg_index" src="../icons/telegram.png" alt=""></a>
-                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh_index" src="../icons/whatsapp.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_tg" src="../icons/telegram.png" alt=""></a>
+                        <a href="#"><img class="margin-right-10px footer__icon footer__icon_wh" src="../icons/whatsapp.png" alt=""></a>
                     </div>
                 </div>
                 <a href="#" class="footer-paragraph footer__item footer__link footer-site">светслова.рф</a>
-                <a href="#" class="footer__item footer__item_index footer__item__mail footer__item_right footer__link">
-                    <img class="margin-right-10px footer__icon footer__icon_mail_index" src="../icons/mail.png" alt="">
+                <a href="#" class="footer__item footer__item__mail footer__item_right footer__link">
+                    <img class="margin-right-10px footer__icon footer__icon_mail" src="../icons/mail.png" alt="">
                     <p class="footer-paragraph">lukidebut@mail.ru</p>
                 </a>
-                <a href="#" class="footer__item footer__item_index footer__item__vk footer__link margin-bottom-60px-imp">
-                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk_index" src="../icons/vk.png" alt="">
+                <a href="#" class="footer__item footer__item__vk footer__link margin-bottom-60px-imp">
+                    <img class="margin-right-10px footer__icon footer__icon footer__icon_vk" src="../icons/vk.png" alt="">
                     <p class="footer-paragraph ">s.razmyslovich</p>
                 </a>
             </div>
             <p class="footer__item footer__name">© 1984-2024 "А музы не молчат"</p>
         </div>
     </footer>
-    <script src="js/script-news.js"></script>
-    <script src="js/news_card.js"></script>
+    <script src="js/script.js"></script>
     </body>
     </html>

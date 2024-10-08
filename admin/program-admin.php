@@ -97,6 +97,9 @@ header('location: program-admin.php');
                 </div>
                 <ul class="navigation">
                     <li class="navigation__item margin-right-20px">
+                        <a class="navigation__link" href="../admin/admin-input-true.html">главная</a>
+                    </li>
+                    <li class="navigation__item margin-right-20px">
                         <a class="navigation__link" href="../admin/news-admin.php">новости</a>
                     </li>
                     <li class="navigation__item margin-right-20px">

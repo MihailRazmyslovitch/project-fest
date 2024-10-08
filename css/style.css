@@ -894,7 +894,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  backdrop-filter: blur(0.3rem);
+  backdrop-filter: blur(0.4rem);
   opacity: 0;
 }
 .gallery__item_is-hovered_s {
@@ -1360,11 +1360,6 @@ body {
 .footer__link:hover {
   color: #EAA47D;
 }
-.footer-site {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .footer__name {
   font-size: 3rem;
   font-weight: 400;
@@ -1378,10 +1373,6 @@ body {
 .footer__item:last-child {
   margin-bottom: 0;
 }
-.footer__item_right {
-  position: absolute;
-  right: 0;
-}
 .footer__icon {
   height: 3.7rem;
   width: 3.7rem;
@@ -1389,6 +1380,10 @@ body {
 
 .contacts__items {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .visitors-section__background {
